@@ -1,0 +1,11 @@
+.content-image {
+    border-radius: 4px;
+    box-shadow: 0px 0px 6px $main-yellow;
+    overflow: hidden;
+
+    img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+    }
+}
