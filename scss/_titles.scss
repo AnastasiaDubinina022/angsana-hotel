@@ -1,4 +1,15 @@
-//sections titles
+// upper block titles
+h1 {
+    font-size: 60px;
+    font-weight: 900;
+    margin-bottom: 30px;
+    text-shadow: 0px 0px 8px $light-yellow;
+
+    opacity: 0;
+    animation: simple-appearance 0.5s linear 0.7s forwards;
+}
+
+// sections title
 h3 {
     font-family: Garamond;
     text-transform: uppercase;

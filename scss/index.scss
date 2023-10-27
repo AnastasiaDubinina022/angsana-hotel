@@ -49,15 +49,6 @@ body {
     height: 650px;
     position: relative;
 }
-.home-welcome__image {
-    height: 100%;
-    img {
-        width: 100vw;
-        max-height: 100%;
-        object-fit: cover;
-        filter: brightness(80%);
-    }
-}
 
 .home-welcome__body {
     position: absolute;

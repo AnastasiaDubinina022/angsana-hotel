@@ -1,4 +1,6 @@
 @import "./nullstyle.scss";
+@import "./header.scss";
+@import "./footer.scss";
 @import "./variables.scss";
 @import "./animation.scss";
 @import "./buttons.scss";
@@ -30,225 +32,114 @@ body {
     margin: 0 auto;
 }
 
-.header {
-    width: 100%;
-    height: 100px;
-    position: sticky;
-    background-color: $main-darkblue;
-}
-
-.header__row {
-    display: flex;
-    justify-content: space-between;
-    height: 100px;
-}
-.header__logo {
-    flex: 0 0 200px;
-    margin-right: 150px;
-    display: flex;
-    align-items: center;
-
-    img {
-        width: 100%;
-        object-fit: cover;
-    }
-}
-.header__menu {
-    flex-grow: 1;
-    max-width: 500px;
-    display: flex;
-    align-items: center;
-}
-.menu__list {
-    flex: 1 0 auto;
-    display: flex;
-    justify-content: space-between;
-    font-size: 18px;
-    font-weight: 500;
-}
-.menu__link {
-    color: $text-white;
-    transition: all 0.3s ease;
-    display: block;
-    margin: 0 7px;
-
-    &:hover {
-        color: $main-yellow;
-        transform: scale(1.03);
-    }
-}
-
-.menu__link-active {
-    color: $main-yellow;
-    font-weight: 600;
-    display: block;
-    margin: 0 7px;
-
-    &::after {
-        display: block;
-        content: "";
-        width: 100%;
-        height: 2px;
-        margin-top: 2px;
-        background-color: $main-yellow;
-    }
-}
-
 .main {
     flex: 1;
 }
 
-.footer {
-    height: 200px;
-    width: 100%;
-    background-color: $main-darkblue;
-    color: $text-white;
-    line-height: 1.4;
-    font-size: 15px;
+.main-wrapper {
     display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+}
+
+.upper-block {
+    height: 500px;
+    display: flex;
+    position: relative;
+}
+
+.upper-block__title-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-.footer__body {
+.rooms-details {
+    padding: 70px 0;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px;
 }
 
-.footer__info {
-    flex: 0 0 35%;
+.rooms-details__rooms-item {
+    flex: 0 1 47%;
+    border: 1px solid $main-darkblue;
+    border-radius: 4px;
+}
+
+.rooms-item__image {
+    height: 300px;
+    border-radius: 4px 4px 0px 0px;
+}
+
+.rooms-item__title {
+    height: 40px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 10px 0;
-    font-size: 12px;
-}
-
-.footer__icon {
-    width: 200px;
-    img {
-        width: 100%;
-        object-fit: cover;
-    }
-}
-
-.footer__slogan {
-    font-size: 12px;
-    color: $main-yellow;
-}
-
-.footer__contact {
-    a {
-        color: $text-white;
-        font-size: 12px;
-    }
-}
-.footer__adress,
-.footer__phone,
-.footer__mail {
-    color: $main-yellow;
-}
-
-.footer__links {
-    flex: 0 0 40%;
-    display: flex;
-    justify-content: space-around;
-}
-
-.footer__column {
-    flex: 0 0 130px;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    row-gap: 10px;
-}
-
-.footer__socials-wrapper {
-    display: flex;
-}
-
-.footer__socials-icon {
-    width: 18px;
-    height: 18px;
-    margin: auto 0;
-
-    img {
-        max-width: 100%;
-        object-fit: cover;
-    }
-}
-
-.footer__link {
-    display: inline-block;
-    color: $text-white;
-    font-weight: 500;
-    margin-left: 8px;
-    transition: all 0.3s ease-in 0s;
-
-    &:hover {
+    align-items: center;
+    background-color: $main-darkblue;
+    margin-bottom: 25px;
+    h3 {
         color: $main-yellow;
+        margin: 0px;
     }
 }
 
-.footer__subscribe {
-    flex: 0 0 25%;
+.rooms-item__list {
+    padding: 0px 0px 25px 25px;
+    line-height: 1.5;
+    font-weight: 500;
+    list-style-type: none;
+
+    span {
+        padding-right: 7px;
+    }
+
+    a {
+        color: $main-darkblue;
+        font-weight: 700;
+        transition: all 0.2s ease;
+        &:hover {
+            text-shadow: 0px 0px 3px $main-yellow;
+        }
+    }
+}
+
+.rooms-item__row {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
-    padding: 45px 0 25px 0;
+    align-items: center;
+    padding: 0px 25px 25px;
+}
+
+.rooms-item__item {
+    width: 220px;
+    height: 35px;
+    background-color: $main-yellow;
+    border: 1px solid $main-darkblue;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     p {
-        color: $main-yellow;
-        font-weight: 500;
-    }
-}
-.footer__box {
-    display: flex;
-    transition: all 0.2s ease-in 0s;
-
-    &:hover {
-        box-shadow: 0px 0px 6px $light-yellow;
+        font-size: 17px;
+        font-weight: 700;
     }
 }
 
-.footer__input {
-    flex: 1 0 auto;
+.rooms-item__button {
+    width: 130px;
 
-    input {
-        width: 100%;
-        height: 40px;
-        border-radius: 4px 0px 0px 4px;
-        border: 1px solid $main-yellow;
-        background-color: $main-darkblue;
-        font-size: 14px;
-        text-indent: 5px;
-        transition: all 0.3s ease-in 0s;
-
-        &::placeholder {
-            color: $text-white;
-        }
-
-        &:focus {
-            background-color: $light-yellow;
-            &::placeholder {
-                color: $main-darkblue;
-            }
-        }
-    }
-}
-.footer__button {
-    button {
-        height: 40px;
-        width: 60px;
-        border-radius: 0px 4px 4px 0px;
-        text-transform: uppercase;
-        font-weight: 600;
-        background-color: $main-yellow;
-        transition: all 0.3s ease-in 0s;
-        &:hover {
-            background-color: $text-white;
-        }
-        &:active {
-            background-color: $main-darkblue;
-        }
+    a {
+        color: $text-white;
     }
 }
