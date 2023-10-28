@@ -377,6 +377,9 @@ h6 {
   box-shadow: 0px 0px 6px #e0b973;
   transform: scale(1.02);
 }
+.yellow-button a {
+  color: #14274a;
+}
 
 h1 {
   font-size: 60px;

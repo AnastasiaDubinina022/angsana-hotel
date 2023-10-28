@@ -377,6 +377,9 @@ h6 {
   box-shadow: 0px 0px 6px #e0b973;
   transform: scale(1.02);
 }
+.yellow-button a {
+  color: #14274a;
+}
 
 h1 {
   font-size: 60px;
@@ -441,4 +444,99 @@ body {
 
 .main {
   flex: 1;
+  padding-top: 100px;
+}
+
+.upper-block {
+  height: 500px;
+  display: flex;
+  position: relative;
+}
+
+.upper-block__title-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.upper-block__title {
+  color: #fff;
+}
+.upper-block__title h1 {
+  text-shadow: 0px 0px 8px #14274a;
+}
+
+.facilities {
+  padding: 70px 0;
+}
+
+.facilities__container {
+  display: flex;
+  justify-content: space-betweeen;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.facilities__facilities-item {
+  flex: 0 0 47%;
+  display: flex;
+  border: 1px solid #14274a;
+  border-radius: 4px;
+}
+
+.facilities-item__inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.facilities-item__image {
+  max-height: 300px;
+  border-radius: 0px 4px 4px 0px;
+}
+
+.facilities-item__info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.facilities-item-title {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #14274a;
+  color: #e0b973;
+}
+.facilities-item-title h3 {
+  margin: 0;
+}
+
+.facilities-item__text {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  line-height: 1.5;
+  font-weight: 500;
+  padding: 25px 25px 0px 25px;
+}
+.facilities-item__text p:first-child {
+  margin-bottom: 25px;
+}
+.facilities-item__text p:last-child {
+  font-weight: 600;
+}
+
+.facilities-item__button {
+  align-self: flex-end;
+  margin: 0 25px 25px 0;
+  width: 190px;
+  border-radius: 20px 4px 20px 4px;
 }
