@@ -263,7 +263,7 @@ h6 {
   transition: all 0.2s ease-in 0s;
 }
 .footer__input-wrapper:hover {
-  box-shadow: 0px 0px 3px bisque;
+  box-shadow: 0px 0px 3px rgb(247, 233, 214);
 }
 
 .footer__input {
@@ -287,7 +287,7 @@ h6 {
   color: #fff;
 }
 .footer__input input:focus {
-  box-shadow: 0px 0px 6px bisque;
+  box-shadow: 0px 0px 6px rgb(247, 233, 214);
 }
 .footer__input input:focus::-moz-placeholder {
   color: #fff;
@@ -351,7 +351,7 @@ h6 {
   font-weight: 600;
   border: 1px solid #e0b973;
   border-radius: 4px;
-  box-shadow: 0px 0px 3px bisque;
+  box-shadow: 0px 0px 3px rgb(247, 233, 214);
   transition: all 0.2s linear;
 }
 .blue-button:hover {
@@ -370,7 +370,7 @@ h6 {
   font-weight: 600;
   border: 1px solid #14274a;
   border-radius: 4px;
-  box-shadow: 0px 0px 3px bisque;
+  box-shadow: 0px 0px 3px rgb(247, 233, 214);
   transition: all 0.2s linear;
 }
 .yellow-button:hover {
@@ -385,9 +385,17 @@ h1 {
   font-size: 60px;
   font-weight: 900;
   margin-bottom: 30px;
-  text-shadow: 0px 0px 8px bisque;
+  text-shadow: 0px 0px 8px rgb(247, 233, 214);
   opacity: 0;
   animation: simple-appearance 0.5s linear 0.7s forwards;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 600;
+  opacity: 0;
+  position: relative;
+  animation: appearance-on-the-right 0.7s linear reverse forwards;
 }
 
 h3 {
@@ -415,7 +423,7 @@ h3 {
 }
 .fullscreen-image img {
   width: 100vw;
-  max-height: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   filter: brightness(80%);
@@ -424,6 +432,8 @@ h3 {
 body {
   font-family: Montserrat;
   font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
   color: #14274a;
 }
 
@@ -438,10 +448,101 @@ body {
 .container {
   max-width: 1200px;
   width: 100%;
-  padding: 0 15px;
+  padding: 0 25px;
   margin: 0 auto;
 }
 
 .main {
   flex: 1;
+}
+
+.upper-block {
+  margin: 100px 0px 0px 0px;
+  height: 600px;
+  position: relative;
+  display: flex;
+}
+
+.upper-block__body {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.upper-block__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+.upper-block__inner h1 {
+  margin-bottom: 70px;
+}
+.upper-block__inner h2 {
+  text-align: center;
+}
+
+.offers {
+  padding: 50px 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.offers__offers-card {
+  max-height: 500px;
+  padding: 30px 0px;
+}
+.offers__offers-card:nth-child(even) {
+  background-color: rgb(247, 233, 214);
+}
+
+.offers-card__inner {
+  display: flex;
+  height: 400px;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+}
+
+.offers-card__inner_reverse {
+  flex-direction: row-reverse;
+}
+
+.offers-card__body {
+  flex: 0 1 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.offers-card__body p {
+  font-weight: 500;
+  line-height: 1.7;
+}
+
+.offers-card__image {
+  flex: 0 1 60%;
+  max-height: 450px;
+  border-radius: 60px 4px 60px 4px;
+}
+
+.offers-card__image_reverse {
+  border-radius: 4px 60px 4px 60px;
+}
+
+.offers-card__button {
+  max-width: 180px;
+  border-radius: 16px 4px 16px 4px;
+}
+
+.general-terms {
+  padding: 0px 0px 50px 0px;
+}
+
+.general-terms__list li {
+  margin-left: 17px;
+  list-style: square;
 }

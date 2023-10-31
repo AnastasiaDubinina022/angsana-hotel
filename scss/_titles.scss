@@ -9,6 +9,15 @@ h1 {
     animation: simple-appearance 0.5s linear 0.7s forwards;
 }
 
+h2 {
+    font-size: 40px;
+    font-weight: 600;
+
+    opacity: 0;
+    position: relative;
+    animation: appearance-on-the-right 0.7s linear reverse forwards;
+}
+
 // sections title
 h3 {
     font-family: Garamond;
