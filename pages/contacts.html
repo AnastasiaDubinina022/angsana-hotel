@@ -65,41 +65,70 @@
 
                 <section class="contact-form">
                     <div class="contact-form__image fullscreen-image">
-                        <img src="../images/contacts/contact-form-bg.jpg" alt="contact-form-bg" />
+                        <img src="../images/contacts/contacts-form-bg.jpg" alt="contact-form-bg" />
                     </div>
-                    <form action="#" method="get" enctype="multipart/form-data">
-                        <div class="contact-form__wrapper">
+
+                    <div class="contact-form__wrapper">
+                        <form action="#" method="get" enctype="multipart/form-data">
                             <div class="contact-form__form">
                                 <div class="contact-form__input">
-                                    <input type="text" name="username" value="" placeholder="Your name" tabindex="1" />
+                                    <select name="type" required>
+                                        <option value="empty" selected disabled>Type of enquiry *</option>
+                                        <option value="general">General enquiries</option>
+                                        <option value="guest-service">Guest service enquiries</option>
+                                        <option value="bookings">Reservations and bookings</option>
+                                        <option value="website">Website enquiries</option>
+                                        <option value="spa">Spa enquiries</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                <div class="contact-form__input">
+                                    <input
+                                        type="text"
+                                        name="username"
+                                        value=""
+                                        placeholder="Your name *"
+                                        tabindex="1"
+                                    />
                                 </div>
                                 <div class="contact-form__input">
                                     <input
                                         type="email"
                                         name="usermail"
                                         value=""
-                                        placeholder="Your email"
+                                        placeholder="Your email *"
                                         tabindex="2"
                                     />
                                 </div>
                                 <div class="contact-form__input">
-                                    <textarea name="text" placeholder="Type your message" tabindex="3"></textarea>
+                                    <textarea name="text" placeholder="Your message *" tabindex="3"></textarea>
                                 </div>
                                 <div class="contact-form__button yellow-button">
                                     <button type="submit" tabindex="4">Send message</button>
                                 </div>
                             </div>
+                        </form>
 
-                            <div class="container">
-                                <div class="contact-form__map content-image">
-                                    <img src="../images/contacts/contacts-map.jpg" alt="contacts-map" />
+                        <div class="contact-form__container">
+                            <div class="contact-form__row">
+                                <div class="contact-form__column">
+                                    <img src="../images/contacts/phone-icon.svg" alt="phone-icon" />
+                                    <a href="tel:+66076362333">+66 (0)76 362 333</a>
                                 </div>
-                                <div class="contact-form__row">
-                                    <div class="contact-form__phone">+66 (0)76 362 333</div>
+                                <div class="contact-form__column">
+                                    <img src="../images/contacts/email-icon.svg" alt="email-icon" />
+                                    <a href="mailto:info@lagunaproperty.com">info@lagunaproperty.com</a>
+                                </div>
+                                <div class="contact-form__column">
+                                    <img src="../images/contacts/location-icon.svg" alt="location-icon" />
+                                    <p>394 Moo 4 Cherngtalay, Amphoe Thalang, Chang Wat Phuket 83110</p>
                                 </div>
                             </div>
+                            <div class="contact-form__map content-image">
+                                <img src="../images/contacts/contacts-map.jpg" alt="contacts-map" />
+                            </div>
                         </div>
-                    </form>
+                    </div>
                 </section>
             </main>
             <footer class="footer">
