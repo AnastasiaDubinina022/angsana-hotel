@@ -72,7 +72,7 @@ body {
 }
 
 .rooms-details__rooms-item {
-    flex: 0 1 47%;
+    flex: 0 0 47%;
     border: 1px solid $main-darkblue;
     border-radius: 4px;
 }
@@ -83,15 +83,23 @@ body {
 }
 
 .rooms-item__title {
-    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: $main-darkblue;
     margin-bottom: 25px;
+    padding: 0px 10px;
     h3 {
+        font-size: 20px;
+        line-height: 2;
+        text-align: center;
         color: $main-yellow;
         margin: 0px;
+
+        max-width: 510px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
 }
 
@@ -127,7 +135,7 @@ body {
     height: 35px;
     background-color: $main-yellow;
     border: 1px solid $main-darkblue;
-    border-radius: 4px;
+    border-radius: 16px 4px 16px 4px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -140,8 +148,99 @@ body {
 
 .rooms-item__button {
     width: 130px;
+    border-radius: 16px 4px 16px 4px;
 
     a {
         color: $text-white;
+    }
+}
+
+// @media queries
+
+@media screen and (min-width: 960px) and (max-width: 1200px) {
+    .rooms-item__title {
+        h3 {
+            font-size: 18px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .upper-block {
+        height: 370px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .rooms-details {
+        gap: 10px;
+    }
+
+    .rooms-item {
+        max-width: 350px;
+    }
+
+    .rooms-item__title {
+        h3 {
+            font-size: 16px;
+            max-width: 310px;
+        }
+    }
+
+    .rooms-item__item {
+        p {
+            font-size: 14px;
+        }
+        width: 160px;
+        height: 35px;
+    }
+
+    .rooms-item__button {
+        width: 115px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .upper-block {
+        height: 300px;
+    }
+
+    .upper-block__title {
+        text-align: center;
+    }
+
+    .rooms-details {
+        flex-direction: column;
+    }
+
+    .rooms-details__rooms-item {
+        font-size: 14px;
+        margin-bottom: 25px;
+        flex: 1;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .upper-block__title {
+        max-width: 300px;
+    }
+
+    .rooms-item__row {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .rooms-item__item {
+        align-self: flex-start;
+    }
+
+    .rooms-item__title {
+        h3 {
+            max-width: 250px;
+        }
+    }
+
+    .rooms-item__button {
+        align-self: flex-end;
     }
 }
