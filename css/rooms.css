@@ -662,17 +662,27 @@ body {
   .upper-block__title {
     max-width: 300px;
   }
-  .rooms-item__row {
-    flex-direction: column;
-    gap: 10px;
-  }
-  .rooms-item__item {
-    align-self: flex-start;
-  }
   .rooms-item__title h3 {
     max-width: 250px;
   }
+}
+@media screen and (max-width: 390px) {
   .rooms-item__button {
-    align-self: flex-end;
+    max-width: 105px;
+  }
+  .rooms-item__item {
+    max-width: 106px;
+    padding: 0px 3px;
+  }
+  .rooms-item__item p {
+    max-width: 106px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+}
+@media screen and (max-width: 330px) and (max-height: 580px) {
+  .rooms-item__image {
+    height: 200px;
   }
 }

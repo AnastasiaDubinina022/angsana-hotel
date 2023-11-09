@@ -115,7 +115,7 @@ body {
 }
 .facilities__container {
     display: flex;
-    justify-content: space-betweeen;
+    justify-content: space-between;
     flex-wrap: wrap;
     gap: 50px;
 }
@@ -133,7 +133,7 @@ body {
     flex-direction: column;
 }
 .facilities-item__image {
-    max-height: 300px;
+    height: 300px;
     border-radius: 0px 4px 4px 0px;
 }
 
@@ -143,7 +143,7 @@ body {
     flex-direction: column;
 }
 
-.facilities-item-title {
+.facilities-item__title {
     height: 40px;
     display: flex;
     justify-content: center;
@@ -164,7 +164,7 @@ body {
 
     line-height: 1.5;
     font-weight: 500;
-    padding: 25px 25px 0px 25px;
+    padding: 25px 25px 15px 25px;
 
     p {
         &:first-child {
@@ -182,4 +182,113 @@ body {
     margin: 0 25px 25px 0;
     width: 190px;
     border-radius: 20px 4px 20px 4px;
+}
+
+//@media queries
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .upper-block {
+        height: 370px;
+    }
+
+    .services__column {
+        padding: 0px 10px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    body {
+        font-size: 14px;
+    }
+
+    .services__title {
+        margin-bottom: 15px;
+        h3 {
+            font-size: 20px;
+        }
+    }
+
+    .facilities__container {
+        gap: 25px;
+    }
+
+    .facilities-item__title {
+        padding: 0px 15px;
+        h3 {
+            font-size: 20px;
+
+            max-width: 315px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+    }
+}
+
+@media screen and (max-width: 782px) {
+    .services__list {
+        span {
+            max-width: 118px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .upper-block {
+        height: 300px;
+    }
+
+    .services__row {
+        flex-wrap: wrap;
+    }
+
+    .services__column {
+        flex: 0 0 50%;
+    }
+
+    .services__list {
+        span {
+            max-width: 135px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+    }
+
+    .facilities-item__image {
+        height: 230px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .facilities__facilities-item {
+        flex: 0 0 100%;
+    }
+}
+
+@media screen and (max-width: 477px) {
+    .services__column {
+        flex: 0 0 100%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .facilities-item__image {
+        height: 200px;
+    }
+
+    .facilities-item__title {
+        h3 {
+            font-size: 18px;
+        }
+    }
+
+    .facilities-item__text {
+        p {
+            font-size: 12px;
+        }
+    }
 }

@@ -133,3 +133,88 @@ body {
         list-style: square;
     }
 }
+
+// @media queries
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .upper-block {
+        height: 370px;
+        h1 {
+            margin-bottom: 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 960px) {
+    body {
+        font-size: 14px;
+    }
+
+    .offers {
+        h3 {
+            font-size: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .upper-block {
+        height: 300px;
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+    }
+
+    .offers {
+        padding: 30px 0px 50px 0px;
+    }
+
+    .offers__offers-card {
+        max-height: 600px;
+        h3 {
+            font-size: 18px;
+        }
+    }
+
+    .offers-card__inner {
+        flex-direction: column-reverse;
+        height: 490px;
+    }
+
+    .offers-card__image {
+        height: 250px;
+        min-height: 250px;
+        max-height: 250px;
+        margin-bottom: 25px; // !!!!!!!!!!!!!!!!!!!!!!!
+    }
+
+    .offers-card__body {
+        p {
+            margin-bottom: 15px;
+        }
+    }
+
+    .offers-card__button {
+        align-self: flex-end;
+        width: 150px;
+    }
+
+    .general-terms {
+        h3 {
+            font-size: 18px;
+        }
+    }
+}
+
+// @media screen and (max-width: 620px) {
+//     .offers-card__image,
+//     .offers-card__image_reverse {
+//         min-height: 200px;
+//         max-height: 200px;
+//         height: 200px;
+//     }
+// }
