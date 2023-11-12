@@ -159,6 +159,7 @@ h6 {
 .footer {
   height: 200px;
   width: 100%;
+  padding: 25px 0px;
   background-color: #14274a;
   color: #fff;
   line-height: 1.4;
@@ -170,6 +171,11 @@ h6 {
 .footer__body {
   display: flex;
   justify-content: space-between;
+  height: 100%;
+}
+
+.footer-container {
+  height: 100%;
 }
 
 .footer__info {
@@ -178,6 +184,7 @@ h6 {
   flex-direction: column;
   justify-content: space-between;
   gap: 10px 0;
+  margin-right: 50px;
   font-size: 12px;
 }
 
@@ -198,6 +205,7 @@ h6 {
 .footer__contact a {
   color: #fff;
   font-size: 12px;
+  line-height: 1.5;
 }
 
 .footer__adress,
@@ -206,8 +214,14 @@ h6 {
   color: #e0b973;
 }
 
+.footer__mobile-adaptive-wrapper {
+  flex: 0 1 65%;
+  display: flex;
+  justify-content: space-between;
+}
+
 .footer__links {
-  flex: 0 0 40%;
+  flex: 0 1 60%;
   display: flex;
   justify-content: space-around;
 }
@@ -247,7 +261,7 @@ h6 {
 }
 
 .footer__subscribe {
-  flex: 0 0 25%;
+  flex: 0 1 40%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -267,7 +281,7 @@ h6 {
 }
 
 .footer__input {
-  flex: 1 0 auto;
+  flex: 1 1 auto;
 }
 .footer__input input {
   width: 100%;
@@ -312,6 +326,97 @@ h6 {
   background-color: #14274a;
 }
 
+@media screen and (max-width: 960px) {
+  .footer {
+    height: 265px;
+    font-size: 14px;
+  }
+  .footer__mobile-adaptive-wrapper {
+    flex-direction: column;
+    max-width: 470px;
+  }
+  .footer__links {
+    justify-content: flex-start;
+  }
+  .footer__column {
+    flex: 0 0 50%;
+  }
+  .footer__subscribe {
+    padding: 20px 0px 0px 0px;
+  }
+  .footer__subscribe p,
+  .footer__subscribe form {
+    flex: 0 0 50%;
+    margin: 0px 0px 0px 8px;
+  }
+  .footer__contact a {
+    line-height: 1.7;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    height: 290px;
+  }
+  .footer__icon {
+    max-width: 150px;
+    margin-bottom: 8px;
+  }
+  .footer__input-wrapper input,
+  .footer__input-wrapper button {
+    height: 32px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .footer__contact a {
+    line-height: 1.5;
+  }
+  .footer__logo {
+    max-width: 160px;
+  }
+  .footer__column {
+    margin-bottom: 7px;
+  }
+  .footer__subscribe {
+    padding: 0px;
+    max-height: 60px;
+  }
+  .footer__subscribe p {
+    line-height: 1.2;
+  }
+}
+@media screen and (max-width: 500px) {
+  .footer {
+    height: 370px;
+    position: relative;
+  }
+  .footer__info {
+    justify-content: flex-start;
+  }
+  .footer__adress {
+    margin-top: 15px;
+  }
+  .footer__links {
+    flex-direction: column;
+  }
+  .footer__links a {
+    display: inline-block;
+    height: 18px;
+  }
+  .footer__socials-wrapper {
+    padding-left: 4px;
+  }
+  .footer__subscribe {
+    position: absolute;
+    bottom: 25px;
+    left: 15px;
+  }
+  .footer__subscribe p {
+    margin-bottom: 7px;
+  }
+  .footer__button button {
+    width: 30px;
+  }
+}
 @keyframes simple-appearance {
   0% {
     opacity: 0;
@@ -560,7 +665,7 @@ body {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  padding: 70px 50px;
+  padding: 70px 30px;
 }
 .contact-form__wrapper form {
   flex: 0 1 330px;
@@ -626,8 +731,7 @@ body {
   flex-direction: column;
   align-items: center;
   row-gap: 50px;
-  max-width: 1200px;
-  padding: 0 25px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -666,8 +770,7 @@ body {
 
 .contact-form__map {
   flex: 0 1 430px;
-  min-width: 800px;
-  max-width: 800px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -711,9 +814,29 @@ body {
   .contact-form__column img {
     max-height: 35px;
   }
+  .contact-form__map {
+    flex: 0 1 320px;
+  }
+  .contact-form__bg-image {
+    height: 1030px;
+  }
 }
 @media screen and (max-width: 500px) {
   .contact-form__wrapper {
     padding: 70px 15px;
+  }
+  .contact-form__map {
+    flex: 0 1 280px;
+  }
+  .contact-form__bg-image {
+    height: 1000px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .contact-form__map {
+    flex: 0 1 250px;
+  }
+  .contact-form__bg-image {
+    height: 970px;
   }
 }

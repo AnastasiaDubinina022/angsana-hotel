@@ -100,7 +100,7 @@ body {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    padding: 70px 50px;
+    padding: 70px 30px;
 
     form {
         flex: 0 1 330px;
@@ -173,8 +173,7 @@ body {
     flex-direction: column;
     align-items: center;
     row-gap: 50px;
-    max-width: 1200px;
-    padding: 0 25px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
@@ -215,15 +214,10 @@ body {
 
 .contact-form__map {
     flex: 0 1 430px;
-    min-width: 800px; ///////////  //отсюда начать.
-    max-width: 800px;
+    width: 100%;
     display: flex;
-    // flex-direction: column;
     justify-content: center;
     align-items: center;
-    // img {
-    //     flex: 0 0 100%;
-    // }
 }
 
 // @madia queries
@@ -273,10 +267,36 @@ body {
             max-height: 35px;
         }
     }
+
+    .contact-form__map {
+        flex: 0 1 320px;
+    }
+
+    .contact-form__bg-image {
+        height: 1030px;
+    }
 }
 
 @media screen and (max-width: 500px) {
     .contact-form__wrapper {
         padding: 70px 15px;
+    }
+
+    .contact-form__map {
+        flex: 0 1 280px;
+    }
+
+    .contact-form__bg-image {
+        height: 1000px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .contact-form__map {
+        flex: 0 1 250px;
+    }
+
+    .contact-form__bg-image {
+        height: 970px;
     }
 }
