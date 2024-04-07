@@ -9,7 +9,9 @@
     display: none;
     align-items: center;
     justify-content: center;
+    opacity: 0;
 
+    animation: modal-appearance 0.3s ease forwards;
 
     &_show {
         display: flex;
@@ -36,4 +38,14 @@
 
 .unlocked-scroll {
     overflow: scroll;
+}
+
+@keyframes modal-appearance {
+    0%{
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }

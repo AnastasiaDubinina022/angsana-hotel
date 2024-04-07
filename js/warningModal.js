@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         modalWrapper.classList.add('warning-modal');
         modalText.classList.add('warning-modal__text');
-
         modalText.textContent = 'This section is currently under development.';
         modalWrapper.append(modalText);
         wrapper.append(modalWrapper);
@@ -35,11 +34,9 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
         
-        const blueButtonsList = document.querySelectorAll('.blue-button');
-        const yellowButtonsList = document.querySelectorAll('.yellow-button');
-        const totalButtonsList = [...blueButtonsList, ...yellowButtonsList];
-
-        totalButtonsList.forEach((item) => {
+        const blockedList = document.querySelectorAll('.blocked');
+        
+        blockedList.forEach((item) => {
             item.addEventListener('click', (event) => {
                 event.preventDefault();
                 showModal();
