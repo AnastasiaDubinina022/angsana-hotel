@@ -116,8 +116,51 @@ body {
     height: 35px;
 }
 
-.home-about__image {
+.tabcontainer {
     flex: 0 1 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tabcontent {
+    flex: 1 1 auto;
+    margin-bottom: 15px;
+}
+
+.tabheader {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 4px;
+}
+
+.tabheader__item {
+    flex: 0 1 25%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid $main-yellow;
+    border-bottom: 1px solid $main-yellow;
+    border-radius: 4px;
+}
+
+.tabheader__item_active {
+    background-color: $light-yellow;
+    border: 1px solid $main-yellow;
+    font-weight: 600;
+}
+
+.hide{
+    display: none;
+}
+
+.show {
+    display: flex;
+}
+
+.fade {
+    animation: simple-appearance 0.4s linear forwards;
 }
 
 .home-events {
