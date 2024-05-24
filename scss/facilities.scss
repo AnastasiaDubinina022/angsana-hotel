@@ -113,17 +113,18 @@ body {
 .facilities {
     padding: 70px 0;
     background-color: $light-yellow;
+    
 }
 .facilities__container {
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
     flex-wrap: wrap;
     gap: 50px;
 }
 
 .facilities__facilities-item {
+    display: flex; 
     flex: 0 0 47%;
-    display: flex;
     border: 1px solid $main-darkblue;
     border-radius: 4px;
     background-color: $text-white;

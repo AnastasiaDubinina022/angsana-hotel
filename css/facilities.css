@@ -727,14 +727,13 @@ body {
 
 .facilities__container {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   gap: 50px;
 }
 
 .facilities__facilities-item {
-  flex: 0 0 47%;
   display: flex;
+  flex: 0 0 47%;
   border: 1px solid #14274a;
   border-radius: 4px;
   background-color: #fff;
