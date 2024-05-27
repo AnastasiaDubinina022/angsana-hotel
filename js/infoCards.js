@@ -6,45 +6,48 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     class InfoCard {
-        constructor(src, alt, title, descr, addition, btn, parentSelector) {
+        constructor(src, alt, title, descr, addition, btn, parentSelector, ...classes) {
             this.src = src;
             this.alt = alt;
             this.title = title;
             this.descr = descr;
             this.addition = addition;
             this.btn = btn;
+            this.classes = classes;
             this.parent = document.querySelector(parentSelector);
         }
 
         render() {
             const element = document.createElement('div');
-            element.classList.add('facilities__facilities-item');
 
-            element.innerHTML = `
-                    <div class="facilities-item__inner">
-                        <div class="facilities-item__image content-image">
-                            <img src=${this.src} alt=${this.alt} />
-                        </div>
-                        <div class="facilities-item__info">
-                            <div class="facilities-item__title">
-                                <h3>${this.title}</h3>
-                            </div>
-                            <div class="facilities-item__text">
-                                <p>${this.descr}</p>
-                                <p>${this.addition}</p>
-                            </div>
-
-                            <div class="facilities-item__button yellow-button blocked">
-                                <a href="#" target="_blank">${this.btn}</a>
-                            </div>
-                        </div>
-                    </div>
-                `;
-            this.parent.append(element);
+            if (this.classes.length === 0 || !this.classes.includes('facilities__facilities-item')) {
+                this.classes = 'facilities__facilities-item';
+                element.classList.add(this.classes);
+            } else {
+                this.classes.forEach(className => element.classList.add(className));
+            }
             
+            element.innerHTML = `
+                <div class="facilities-item__image content-image">
+                    <img src=${this.src} alt=${this.alt} />
+                </div>
+                <div class="facilities-item__info">
+                    <div class="facilities-item__title">
+                        <h3>${this.title}</h3>
+                    </div>
+                    <div class="facilities-item__text">
+                        <p>${this.descr}</p>
+                        <p>${this.addition}</p>
+                    </div>
+
+                    <div class="facilities-item__button yellow-button blocked">
+                        <a href="#" target="_blank">${this.btn}</a>
+                    </div>
+                </div>
+            `;
+            this.parent.append(element);  
         }
     }
-
 
     const SpaCard = new InfoCard(
         "../images/facilities-spa.jpg",

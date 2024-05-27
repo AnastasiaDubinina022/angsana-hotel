@@ -123,17 +123,14 @@ body {
 }
 
 .facilities__facilities-item {
-    display: flex; 
     flex: 0 0 47%;
+    display: flex;
+    flex-direction: column;
     border: 1px solid $main-darkblue;
     border-radius: 4px;
     background-color: $text-white;
 }
 
-.facilities-item__inner {
-    display: flex;
-    flex-direction: column;
-}
 .facilities-item__image {
     height: 300px;
     border-radius: 0px 4px 4px 0px;
