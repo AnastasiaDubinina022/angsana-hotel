@@ -1,6 +1,7 @@
 'use strict';
 
-document.addEventListener('DOMContentLoaded', () => { 
+function createWarningModal() { 
+
     function createModal() {
         const body =  document.querySelector('body');
         const wrapper = document.querySelector('.wrapper');
@@ -35,6 +36,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         
         const blockedList = document.querySelectorAll('.blocked');
+
+        // console.log('blockedList: ', blockedList)
         
         blockedList.forEach((item) => {
             item.addEventListener('click', (event) => {
@@ -45,4 +48,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     createModal();
-});
+};
+
+export default createWarningModal;

@@ -1,7 +1,6 @@
 {
   "name": "angsana-hotel",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,6 +18,10 @@
   "devDependencies": {
     "@eslint/js": "^9.3.0",
     "eslint": "^9.3.0",
-    "globals": "^15.3.0"
-  }
+    "globals": "^15.3.0",
+    "webpack": "^5.94.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "keywords": [],
+  "description": ""
 }
