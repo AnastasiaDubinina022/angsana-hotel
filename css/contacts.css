@@ -672,6 +672,7 @@ body {
 }
 .upper-block__body h1 {
   color: #fff;
+  text-shadow: 0px 0px 8px #000;
 }
 
 .aside {

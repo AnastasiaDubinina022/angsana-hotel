@@ -677,6 +677,7 @@ body {
 }
 .upper-block__inner h1 {
   margin-bottom: 70px;
+  text-shadow: 0px 0px 8px #000;
 }
 .upper-block__inner h2 {
   text-align: center;

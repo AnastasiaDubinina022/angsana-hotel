@@ -271,6 +271,12 @@ function createWarningModal() {
                 hideModal();
             }
         });
+
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape') {
+                hideModal();
+            }
+        });
         
         const blockedList = document.querySelectorAll('.blocked');
 
