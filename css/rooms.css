@@ -95,6 +95,7 @@ h6 {
   top: 0px;
   z-index: 10;
   background-color: #14274a;
+  border-bottom: 1px solid #e0b973;
 }
 
 .header__row {
@@ -166,6 +167,7 @@ h6 {
   font-size: 15px;
   display: flex;
   align-items: center;
+  border-top: 1px solid #e0b973;
 }
 
 .footer__body {
