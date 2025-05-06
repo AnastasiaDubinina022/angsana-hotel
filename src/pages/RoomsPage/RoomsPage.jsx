@@ -1,10 +1,10 @@
-import './RoomsPage.css';
+import './RoomsPage.scss';
 import React from 'react';
 
 const RoomsPage = () => {
 
     return (
-        <div className="Rooms-page"></div>
+        <div className="rooms-page">rooms-page</div>
     )
 }
 

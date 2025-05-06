@@ -1,10 +1,17 @@
-// import './HomePage.scss';
 import React from 'react';
+
+import './HomePage.scss';
+
+import HomeWelcome from './elements/HomeWelcome/HomeWelcome';
 
 const HomePage = () => {
 
     return (
-        <div className="home-page"></div>
+        <main className="main">
+            <div className='"main-wrapper"'>
+                <HomeWelcome />
+            </div>
+        </main>
     )
 }
 
