@@ -1,5 +1,5 @@
 import react from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import "./Header.scss";
 
@@ -17,19 +17,39 @@ const Header = () => {
                     <nav className="header__menu">
                         <ul className="menu__list">
                             <li>
-                                <a href="#" className="menu__link-active">Home</a>
+                                <NavLink 
+                                    to="/"
+                                    className={({isActive}) => (isActive ? "menu__link-active" : "menu__link")}
+                                    >Home
+                                </NavLink>
                             </li>
                             <li>
-                                <a href="./pages/rooms.html" className="menu__link">Rooms & Suites</a>
+                                <NavLink 
+                                    to="/rooms"
+                                    className={({isActive}) => (isActive ? "menu__link-active" : "menu__link")}>
+                                    Rooms & Suites
+                                </NavLink>
                             </li>
                             <li>
-                                <a href="./pages/facilities.html" className="menu__link">Facilities</a>
+                                <NavLink 
+                                    to="/facilities"
+                                    className={({isActive}) => (isActive ? "menu__link-active" : "menu__link")}>
+                                    Facilities
+                                </NavLink>
                             </li>
                             <li>
-                                <a href="./pages/offers.html" className="menu__link">Offers</a>
+                                <NavLink 
+                                    to="/offers"
+                                    className={({isActive}) => (isActive ? "menu__link-active" : "menu__link")}>
+                                    Offers
+                                </NavLink>
                             </li>
                             <li>
-                                <a href="./pages/contacts.html" className="menu__link">Contacts</a>
+                                <NavLink 
+                                    to="/contacts"
+                                    className={({isActive}) => (isActive ? "menu__link-active" : "menu__link")}>
+                                    Contacts
+                                </NavLink>
                             </li>
                         </ul>
                     </nav>

@@ -16,9 +16,6 @@ export default function App() {
       <Router>
         <div className="wrapper">
           <Header/>
-          <nav>
-            <Link to="/">Home</Link> | <Link to="/about">About</Link>
-          </nav>
           <Routes>
               <Route path="/" element={<HomePage/>} />
               <Route path="/rooms" element={<RoomsPage/>} />

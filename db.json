@@ -1,0 +1,68 @@
+{
+  "rooms": [
+    {
+      "id": 1,
+      "title": "Laguna room king",
+      "image": "images/rooms/laguna-room-king/laguna-room-king-1.webp",
+      "alt": "laguna-room-king-1",
+      "details": ["1 bathroom", "2 beds", "2 people"],
+      "price": "6500 THB per night"
+    },
+    {
+      "id": 2,
+      "title": "Penthouse suite",
+      "image": "/images/rooms/penthouse-suite/penthouse-suite-1.jpg",
+      "alt": "penthouse-suite-1",
+      "details": ["1 bathroom", "2 beds", "2 people"],
+      "price": "8000 THB per night"
+    },
+    {
+      "id": 3,
+      "title": "Two bedroom suite",
+      "image": "/images/rooms/two-bedroom-suite/two-bedroom-suite-1.webp",
+      "alt": "two-bedroom-suite-1",
+      "details": ["1 bathroom", "2 beds", "2 people"],
+      "price": "10000 THB per night"
+    },
+    {
+      "id": 4,
+      "title": "Two bedroom villa",
+      "image": "/images/rooms/two-bedroom-villa/two-bedroom-villa-1.webp",
+      "alt": "two-bedroom-villa-1",
+      "details": ["1 bathroom", "2 beds", "2 people"],
+      "price": "12000 THB per night"
+    },
+    {
+      "id": 5,
+      "title": "Two bedroom island duplex",
+      "image": "/images/rooms/two-bedroom-island-duplex/two-bedroom-island-duplex-1.webp",
+      "alt": "two-bedroom-island-duplex-1",
+      "details": ["1 bathroom", "2 beds", "2 people"],
+      "price": "15000 THB per night"
+    },
+    {
+      "id": 6,
+      "title": "Two bedroom pool suite beach view",
+      "image": "/images/rooms/two-bedroom-pool-suite-beach-view/two-bedroom-pool-suite-beach-view-1.webp",
+      "alt": "two-bedroom-pool-suite-beach-view-1",
+      "details": ["1 bathroom", "2 beds", "2 people"],
+      "price": "19000 THB per night"
+    },
+    {
+      "id": 7,
+      "title": "Three bedroom pool villa",
+      "image": "/images/rooms/three-bedroom-pool-villa/three-bedroom-pool-villa-1.jpg",
+      "alt": "three-bedroom-pool-villa-1",
+      "details": ["1 bathroom", "2 beds", "2 people"],
+      "price": "22000 THB per night"
+    },
+    {
+      "id": 8,
+      "title": "Four bedroom pool villa",
+      "image": "/images/rooms/four-bedroom-pool-villa/four-bedroom-pool-villa-1.jpg",
+      "alt": "four-bedroom-pool-villa-1",
+      "details": ["1 bathroom", "2 beds", "2 people"],
+      "price": "25000 THB per night"
+    }
+  ]
+}

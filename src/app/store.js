@@ -1,8 +1,8 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counterSlice';
+import rooms from '../features/roomsSlice';
 
 export const store = configureStore({
-  reducer: {
-    counter: counterReducer,
-  },
+  reducer: {rooms},
+  devTools: process.env.NODE_ENV !== 'production'
+  
 });

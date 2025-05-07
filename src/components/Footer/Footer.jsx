@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import './Footer.scss';
 
@@ -35,10 +36,10 @@ const Footer = () => {
                         <div className="footer__mobile-adaptive-wrapper">
                             <div className="footer__links">
                                 <div className="footer__column">
-                                    <a href="#" className="footer__link">About us</a>
-                                    <a href="#" className="footer__link">Contact us</a>
-                                    <a href="#" className="footer__link">Rooms & Rates</a>
-                                    <a href="#" className="footer__link">Facilities</a>
+                                    <Link to="/" className="footer__link">About us</Link>
+                                    <Link to="/contacts"  className="footer__link">Contact us</Link>
+                                    <Link to="/rooms"  className="footer__link">Rooms & Rates</Link>
+                                    <Link to="/facilities"  className="footer__link">Facilities</Link>
                                 </div>
                                 <div className="footer__column">
                                     <div className="footer__socials-wrapper">
