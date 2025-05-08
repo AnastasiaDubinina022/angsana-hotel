@@ -1,3 +1,10 @@
+.rooms-details__rooms-item {
+    flex: 0 0 47%;
+    border: 1px solid var(--main-darkblue);
+    border-radius: 4px;
+    background-color: var(--text-white);
+}
+
 .rooms-item__image {
     height: 300px;
     border-radius: 4px 4px 0px 0px;

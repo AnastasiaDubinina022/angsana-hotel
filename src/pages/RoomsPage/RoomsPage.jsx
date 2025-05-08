@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import axios from 'axios';
 import { useDispatch } from 'react-redux';
 
 import './RoomsPage.scss';
@@ -21,9 +20,7 @@ const RoomsPage = () => {
             <div className="main-wrapper">
                 <PageBanner page="rooms" title="Our rooms and rate" color="blue"/>
                 <div className="container">
-                    <section className="rooms-details">
-                        <RoomsList/>
-                    </section>
+                    <RoomsList/>
                 </div>
             </div>
         </main>

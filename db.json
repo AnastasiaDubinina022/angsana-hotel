@@ -127,5 +127,79 @@
       "icon": "/images/facilities/icons/wedding.svg",
       "title": "Weddings"
     }
+  ],
+  "facilities": [
+    {
+      "id": 1,
+      "path": "/images/facilities/images/facilities-spa.jpg",
+      "alt": "facilities-spa",
+      "addition": "Open: 10:00 - 21:00 hrs.",
+      "title": "Angsana SPA",
+      "descr": "Relax and rejuvenate with invigorating treatments using sustainable products at our award-winning Angsana spa. Enjoy perfected massage sessions with our therapists or salon services with our specialists.",
+      "btn": "360 virtual tour"
+    },
+    {
+      "id": 2,
+      "path": "/images/facilities/images/facilities-fitness.jpg",
+      "alt": "facilities-fitness",
+      "addition": "Open: 24 hrs.",
+      "title": "Fitness centre",
+      "descr": "Enjoy a Yoga or Pilates class while soaking in the sights and sounds of this tropical oasis. Experience the thrill of Thai boxing or stay in shape with a fitness session in our fully equipped gym.",
+      "btn": "360 virtual tour"
+    },
+    {
+      "id": 3,
+      "path": "/images/facilities/images/facilities-restaurants.jpg",
+      "alt": "facilities-restaurants",
+      "addition": "Open: 10:00 - 00:00 hrs.",
+      "title": "Restaurants",
+      "descr": "Our resort offers an extensive range of dining options that cater to all taste buds and occasions. Whether you are looking for a quick bite or a fine-dining experience, we have got you covered.",
+      "btn": "360 virtual tour"
+    },
+    {
+      "id": 4,
+      "path": "/images/facilities/images/facilities-swimming-pool.jpg",
+      "alt": "facilities-swimming-pool",
+      "addition": "Open: 8:00- 23:30 hrs.",
+      "title": "Swimming pool",
+      "descr": "Dive into pure bliss at our resort's 323-meter free-form pool! Swim across the winding pool course, soak up the sun on our artificial beach, or relax on our lazy river. That is not all - our activity zone and jet pool will take your resort experience to a whole new level of awesome!",
+      "btn": "360 virtual tour"
+    },
+    {
+      "id": 5,
+      "path": "/images/facilities/images/facilities-poolside-bar.jpg",
+      "alt": "facilities-poolside-bar",
+      "addition": "Open: 11:00 - 22:00 hrs.",
+      "title": "Poolside bar",
+      "descr": "Fresh juices, delicious treats, and unique cocktail blends. Our bars provide an elegant and relaxed atmosphere, perfect for any occasion.",
+      "btn": "360 virtual tour"
+    },
+    {
+      "id": 6,
+      "path": "/images/facilities/images/facilities-beach.jpg",
+      "alt": "facilities-beach",
+      "addition": "Open: 24 hrs.",
+      "title": "Beach",
+      "descr": "Wade into the aquamarine waters of the Andaman Sea or soak in the sun on our sandy beach, a short 2-minute walk from the resort.",
+      "btn": "360 virtual tour"
+    },
+    {
+      "id": 7,
+      "path": "/images/facilities/images/facilities-golf.jpg",
+      "alt": "facilities-golf",
+      "addition": "Open: 06:00 - 19:00 hrs.",
+      "title": "Golf",
+      "descr": "Tee off at our award-winning Laguna Golf Phuket. This international standard championship golf course with picturesque views offers an experience like no other.",
+      "btn": "360 virtual tour"
+    },
+    {
+      "id": 8,
+      "path": "/images/facilities/images/facilities-events.jpeg",
+      "alt": "facilities-events",
+      "addition": "MISE-lagunaphuket@angsana.com",
+      "title": "Events and meetings",
+      "descr": "With a capacity to host over 1,000 guests both indoors and outdoors, our resort is the ultimate destination for unforgettable weddings, meetings, events, and gala celebrations.",
+      "btn": "Get in touch now!"
+    }
   ]
 }

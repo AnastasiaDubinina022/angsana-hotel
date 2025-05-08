@@ -12,3 +12,9 @@
     background-color: var(--light-yellow);
 }
 
+.facilities__container {
+    display: flex;
+    // justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px;
+}

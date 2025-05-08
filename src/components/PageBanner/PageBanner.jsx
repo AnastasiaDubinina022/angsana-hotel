@@ -17,16 +17,16 @@ const PageBanner = ({page, title, subtitle = null, color = null }) => {
     const colorClass = color ? 'upper-block__title_blue' : 'upper-block__title';
 
     return (
-        <section class="upper-block">
-            <div class="upper-block__title-wrapper">
-                <div class={colorClass}>
-                    <div class="container">
+        <section className="upper-block">
+            <div className="upper-block__title-wrapper">
+                <div className={colorClass}>
+                    <div className="container">
                         <h1>{title}</h1>
                     </div>
                 </div>
             </div>
 
-            <div class="upper-block__image fullscreen-image">
+            <div className="upper-block__image fullscreen-image">
                 <img src={bannerImage} alt="background" />
             </div>
         </section>
