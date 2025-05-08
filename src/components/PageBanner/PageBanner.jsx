@@ -2,14 +2,24 @@ import react from 'react';
 
 import './PageBanner.scss';
 
-import RoomsImage from './images/rooms-banner.jpg'
+import RoomsImage from './images/rooms-banner.jpg';
+import FacilitiesImage from './images/facilities-banner.jpg';
+import OffersImage from './images/offers-banner.jpg';
 
-const PageBanner = ({page, title, subtitle = null }) => {
+const PageBanner = ({page, title, subtitle = null, color = null }) => {
+    const images = {
+        rooms: RoomsImage,
+        facilities: FacilitiesImage,
+        offers: OffersImage
+    }
+
+    const bannerImage = images[page] || RoomsImage;
+    const colorClass = color ? 'upper-block__title_blue' : 'upper-block__title';
 
     return (
         <section class="upper-block">
             <div class="upper-block__title-wrapper">
-                <div class="upper-block__title">
+                <div class={colorClass}>
                     <div class="container">
                         <h1>{title}</h1>
                     </div>
@@ -17,7 +27,7 @@ const PageBanner = ({page, title, subtitle = null }) => {
             </div>
 
             <div class="upper-block__image fullscreen-image">
-                <img src={RoomsImage} alt="rooms-upper-block" />
+                <img src={bannerImage} alt="background" />
             </div>
         </section>
     )

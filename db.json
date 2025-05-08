@@ -64,5 +64,68 @@
       "details": ["1 bathroom", "2 beds", "2 people"],
       "price": "25000 THB per night"
     }
+  ],
+
+  "services": [
+    {
+      "id": 1,
+      "icon": "/images/facilities/icons/minibus.svg",
+      "title": "Airport Transfers"
+    },
+    {
+      "id": 2,
+      "icon": "/images/facilities/icons/dining.svg",
+      "title": "In-Room Dining"
+    },
+    {
+      "id": 3,
+      "icon": "/images/facilities/icons/minibus.svg",
+      "title": "Shuttle Service"
+    },
+    {
+      "id": 4,
+      "icon": "/images/facilities/icons/spa.svg",
+      "title": "Spa and Gallery"
+    },
+    {
+      "id": 5,
+      "icon": "/images/facilities/icons/kids-club.svg",
+      "title": "Kids Club"
+    },
+    {
+      "id": 6,
+      "icon": "/images/facilities/icons/pool.svg",
+      "title": "Swimming Pool"
+    },
+    {
+      "id": 7,
+      "icon": "/images/facilities/icons/gym.svg",
+      "title": "Fitness Centre"
+    },
+    {
+      "id": 8,
+      "icon": "/images/facilities/icons/health.svg",
+      "title": "Medical Services"
+    },
+    {
+      "id": 9,
+      "icon": "/images/facilities/icons/water-sport.svg",
+      "title": "Water Sports"
+    },
+    {
+      "id": 10,
+      "icon": "/images/facilities/icons/golf.svg",
+      "title": "Golf"
+    },
+    {
+      "id": 11,
+      "icon": "/images/facilities/icons/dining.svg",
+      "title": "Restaurant Dining"
+    },
+    {
+      "id": 12,
+      "icon": "/images/facilities/icons/wedding.svg",
+      "title": "Weddings"
+    }
   ]
 }

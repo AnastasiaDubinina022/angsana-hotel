@@ -19,7 +19,7 @@ const RoomsPage = () => {
     return (
         <main className="main">
             <div className="main-wrapper">
-                <PageBanner page="rooms" title="Our rooms and rate"/>
+                <PageBanner page="rooms" title="Our rooms and rate" color="blue"/>
                 <div className="container">
                     <section className="rooms-details">
                         <RoomsList/>

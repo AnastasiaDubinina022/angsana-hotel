@@ -1,10 +1,17 @@
-import './FacilitiesPage.scss';
 import React from 'react';
+
+import './FacilitiesPage.scss';
+
+import PageBanner from '../../components/PageBanner/PageBanner';
+import Services from './elements/Services/Services';
 
 const FacilitiesPage = () => {
 
     return (
-        <div className="facilities-page">facilities-page</div>
+        <main class="main">
+            <PageBanner page="facilities" title="Our facilities" />
+            <Services/>
+        </main>
     )
 }
 

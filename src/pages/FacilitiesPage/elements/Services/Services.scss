@@ -1,0 +1,44 @@
+
+.services {
+    padding: 50px 0px;
+    background-color: var(--text-white);
+}
+
+.services__title {
+    margin-bottom: 30px;
+}
+
+.services__row {
+    display: flex;
+}
+
+.services__column {
+    flex: 0 0 25%;
+    padding: 0px 25px;
+}
+
+.services__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.services__list-item {
+    flex: 1 1 calc(25% - 20px); /* 25% для 4 колонок */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-weight: 500;
+    line-height: 2.3;
+}
+
+.services__list-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 3px;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}

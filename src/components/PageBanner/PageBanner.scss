@@ -18,6 +18,22 @@
     align-items: center;
 }
 
+.upper-block__title {
+    color: var(--text-white);
+
+    h1 {
+        text-shadow: 0px 0px 8px var(--main-darkblue);
+    }
+}
+
+.upper-block__title_blue {
+    color: var(--main-darkblue);
+
+    h1 {
+        text-shadow: 0px 0px 8px var(--text-white);
+    }
+}
+
 @media screen and (max-width: 450px) {
     .upper-block__title {
         max-width: 300px;
