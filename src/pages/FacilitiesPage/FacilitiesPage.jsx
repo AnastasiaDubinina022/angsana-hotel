@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux';
 import './FacilitiesPage.scss';
 
 import PageBanner from '../../components/PageBanner/PageBanner';
-import Services from './elements/Services/Services';
+import ServicesList from './elements/ServicesList/ServicesList';
 import FacilitiesList from './elements/FacilitiesList/FacilitiesList';
 
 import { fetchFacilities } from '../../features/facilitiesSlice';
@@ -19,7 +19,7 @@ const FacilitiesPage = () => {
     return (
         <main className="main">
             <PageBanner page="facilities" title="Our facilities" />
-            <Services/>
+            <ServicesList/>
             <section className="facilities">
                     <div className="container">
                         <div className="facilities__container">

@@ -22,6 +22,7 @@ const PageBanner = ({page, title, subtitle = null, color = null }) => {
                 <div className={colorClass}>
                     <div className="container">
                         <h1>{title}</h1>
+                        {subtitle && <p className='upper-block__subtitle'>{subtitle}</p>}
                     </div>
                 </div>
             </div>

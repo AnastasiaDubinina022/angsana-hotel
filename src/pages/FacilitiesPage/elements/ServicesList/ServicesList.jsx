@@ -1,9 +1,9 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 
-import './Services.scss';
+import './ServicesList.scss';
 
-const Services = () => {
+const ServicesList = () => {
     const [services, setServices] = useState([]);
 
     useEffect(() => {
@@ -38,4 +38,4 @@ const Services = () => {
     )
 }
 
-export default Services;
+export default ServicesList;

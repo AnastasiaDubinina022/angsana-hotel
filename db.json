@@ -128,6 +128,7 @@
       "title": "Weddings"
     }
   ],
+
   "facilities": [
     {
       "id": 1,
@@ -200,6 +201,37 @@
       "title": "Events and meetings",
       "descr": "With a capacity to host over 1,000 guests both indoors and outdoors, our resort is the ultimate destination for unforgettable weddings, meetings, events, and gala celebrations.",
       "btn": "Get in touch now!"
+    }
+  ],
+
+  "offers": [
+    {
+      "title": "Stay More, Pay Less",
+      "description": "Discover the journey of a lifetime at the ultimate holiday destination. By extending your Phuket Getaway for a stay of 3 nights or more, you'll enjoy an incredible offer: a generous discount of up to 30% on your accommodation, free breakfast and special offers on Food & Beverages and a la carte spa services.",
+      "image": "/images/offers/offers-card-1.jpg",
+      "link": "#",
+      "reverse": false
+    },
+    {
+      "title": "Spartan Retreat : Relax and Refresh",
+      "description": "Whether you're a Spartan participant or a dedicated supporter, find your haven of tranquility, relaxation, and rejuvenation with us. Explore this Angsana Laguna Phuket and Blue Tree Phuket’s exclusive offer with complimentary breakfast for 2 persons, savings on food and beverages as well as à la carte spa services.",
+      "image": "/images/offers/offers-card-2.webp",
+      "link": "#",
+      "reverse": true
+    },
+    {
+      "title": "Angsana Wellness Escape",
+      "description": "Embark on a transformative journey to rejuvenate your mind, body, and spirit with our exclusive Wellness Room offer at Angsana Laguna Phuket. With our unique package, you'll not only indulge in luxury and serenity but also take proactive steps towards a healthier you.",
+      "image": "/images/offers/offers-card-3.jpg",
+      "link": "#",
+      "reverse": false
+    },
+    {
+      "title": "Sharing Time",
+      "description": "Your family are the most important people in the world. Nothing compares to the trips taken together each one a defining rite of passage in itself, brimming with opportunities to forge meaningful connections and make lifelong memories. Come together on a trip of a lifetime, and enjoy 20% off our Best Available Rate and exclusive perks.",
+      "image": "/images/offers/offers-card-4jpg.jpg",
+      "link": "#",
+      "reverse": true
     }
   ]
 }

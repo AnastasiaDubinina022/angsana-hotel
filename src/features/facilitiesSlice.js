@@ -7,7 +7,7 @@ const initialState = {
 };
 
 export const fetchFacilities = createAsyncThunk(
-  'rooms/fetchFacilities',
+  'facilities/fetchFacilities',
   async () => {
     const response = await axios.get('http://localhost:3001/facilities');
     return response.data;

@@ -9,3 +9,13 @@
 .facilities__container {
     display: flex;
 }
+
+
+
+@media screen and (max-width: 960px) {
+    .facilities__list {
+        gap: 25px;
+    }
+
+}
+
