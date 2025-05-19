@@ -5,12 +5,14 @@ import './PageBanner.scss';
 import RoomsImage from './images/rooms-banner.jpg';
 import FacilitiesImage from './images/facilities-banner.jpg';
 import OffersImage from './images/offers-banner.jpg';
+import ContactsImage from './images/contacts-banner.jpg';
 
 const PageBanner = ({page, title, subtitle = null, color = null }) => {
     const images = {
         rooms: RoomsImage,
         facilities: FacilitiesImage,
-        offers: OffersImage
+        offers: OffersImage,
+        contacts: ContactsImage
     }
 
     const bannerImage = images[page] || RoomsImage;

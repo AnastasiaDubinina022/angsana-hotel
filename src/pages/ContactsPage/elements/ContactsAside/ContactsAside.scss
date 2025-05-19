@@ -1,0 +1,28 @@
+.aside {
+    display: flex;
+}
+.aside-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 220px;
+    max-height: 250px;
+}
+
+.contact-form__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 50px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+@media screen and (max-width: 960px) {
+    .aside-content {
+        h3 {
+            font-size: 18px;
+        }
+    }
+}
