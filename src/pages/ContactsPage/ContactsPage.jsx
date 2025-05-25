@@ -13,16 +13,18 @@ import BGImage from './images/contacts-bg.jpg';
 const ContactsPage = () => {
 
     return (
-        <main class="contacts">
+        <main className="contacts">
             <PageBanner page='contacts' title="Contact us" />
             <ContactsAside />
-            <section class="contact-form">
-                    <div class="contact-form__bg-image">
+            <section className="contact-form">
+                    <div className="contact-form__bg-image">
                         <img src={BGImage} alt="contacts background" />
                     </div>
-                    <div class="contact-form__wrapper">
-                        <ContactForm />
-                        <div class="contact-form__container">
+                    <div className="contact-form__wrapper">
+                        <div className='form-wrapper'>
+                            <ContactForm />
+                        </div>
+                        <div className="contact-form__container">
                             <ContactLinks/>
                             <ContactsMap/>
                         </div>

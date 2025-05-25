@@ -4,9 +4,9 @@ import './ContactsAside.scss';
 
 const ContactsAside = () => {
     return (
-        <section class="aside">
-            <div class="container">
-                <div class="aside-content">
+        <section className="aside">
+            <div className="container">
+                <div className="aside-content">
                     <h3>WE ARE HERE FOR YOU</h3>
                     <p>
                         At Angsana hotels, we take our customers seriously. Do you have any enquiries, compaints

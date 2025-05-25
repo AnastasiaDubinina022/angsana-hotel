@@ -1,48 +1,93 @@
-import react from 'react';
+import { Formik, Form, Field, ErrorMessage, useField } from "formik";
+import * as Yup from "yup";
+import axios from "axios";
 
 import './ContactForm.scss';
 
 const ContactForm = () => {
-    return (
-        <form action="#" method="get" enctype="multipart/form-data">
-            <div class="contact-form__form">
-                <div class="contact-form__input">
-                    <select name="type" required>
-                        <option value="empty" selected disabled hidden>Type of enquiry *</option>
+    const handleSubmit = (values, { resetForm }) => {
+    axios.post("http://localhost:3001/usersData", values)
+      .then(response => {
+        console.log("Добавлено:", response.data);
+        resetForm();
+      })
+      .catch(error => {
+        console.error("Ошибка:", error);
+      });
+  };
+
+    return(
+        <Formik
+            initialValues={{  
+                type: '',
+                name: '',
+                email: '',
+                message: ''
+            }}
+            validationSchema={Yup.object({  
+                type: Yup.string()
+                        .required('Select the type of enquiry'),
+                name: Yup.string()
+                        .min(2, 'At least 2 characters')
+                        .required('Required field!'),
+                email: Yup.string()
+                        .email('Incorrect address')
+                        .required('Required field!'),
+                message: Yup.string()
+                        .min(10, 'At least 10 characters')
+                        .required('Required field!')
+            })}
+            onSubmit={handleSubmit}
+            > 
+            <Form className="form">
+                    <Field
+                        id="type"
+                        name="type"
+                        as='select'
+                        className="contact-form__input" 
+                        tabIndex="1" 
+                    >
+                        <option value="" disabled >Type of enquiry *</option>
                         <option value="general">General enquiries</option>
                         <option value="guest-service">Guest service enquiries</option>
                         <option value="bookings">Reservations and bookings</option>
                         <option value="website">Website enquiries</option>
                         <option value="spa">Spa enquiries</option>
                         <option value="other">Other</option>
-                    </select>
+                    </Field>
+                    <ErrorMessage className="error" name="type" component='div'/>
+                <Field  
+                    id="name"
+                    name="name"
+                    type="text"
+                    className="contact-form__input"
+                    placeholder="Your name *" 
+                    tabIndex="2"
+                />
+                <ErrorMessage className="error" name="name" component='div'/> 
+                <Field  
+                    id="email"
+                    name="email"
+                    type="email"
+                    className="contact-form__input" 
+                    placeholder="Your email *"
+                    tabIndex="3"
+                />
+                <ErrorMessage className="error" name="email" component='div'/> 
+                <Field  
+                    id="message"
+                    name="message"
+                    as='textarea'
+                    className="contact-form__textarea"
+                    placeholder="Your message *" 
+                    tabIndex="4"
+                />
+                <ErrorMessage className="error" name="message" component='div'/> 
+                <div className="contact-form__button yellow-button blocked">
+                    <button type="submit" tabIndex="5">Send message</button>
                 </div>
-                <div class="contact-form__input">
-                    <input
-                        type="text"
-                        name="username"
-                        value=""
-                        placeholder="Your name *"
-                        tabindex="1"
-                    />
-                </div>
-                <div class="contact-form__input">
-                    <input
-                        type="email"
-                        name="usermail"
-                        value=""
-                        placeholder="Your email *"
-                        tabindex="2"
-                    />
-                </div>
-                <div class="contact-form__input">
-                    <textarea name="text" placeholder="Your message *" tabindex="3"></textarea>
-                </div>
-                <div class="contact-form__button yellow-button blocked">
-                    <button type="submit" tabindex="4">Send message</button>
-                </div>
-            </div>
-        </form>
+            </Form>
+        </Formik>
     )
 }
 

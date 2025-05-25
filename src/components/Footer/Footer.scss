@@ -110,11 +110,16 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 20px 0;
     padding: 45px 0 25px 0;
 
     p {
         color: var(--main-yellow);
         font-weight: 500;
+    }
+
+    form {
+        justify-content: flex-start;
     }
 }
 .footer__input-wrapper {

@@ -5,11 +5,11 @@ import './GallerySlider.scss';
 const GallerySlider = () => {
 
     return (
-        <section class="home-gallery">
-                        <div class="container">
+        <section className="home-gallery">
+                        <div className="container">
                             <h3>Our galleries</h3>
-                            <div class="home-gallery__slider-wrapper">
-                                <div class="home-gallery__gallery-slider">
+                            <div className="home-gallery__slider-wrapper">
+                                <div className="home-gallery__gallery-slider">
                                     <div>
                                         <img src="/images/home/home-gallery-slider-1.jpg" alt="image not found"></img>
                                     </div>
@@ -35,11 +35,11 @@ const GallerySlider = () => {
                                         <img src="/images/home/home-gallery-slider-8.jpg" alt="image not found"></img>
                                     </div>
                                 </div>
-                                <ul class="gallery-slider__control" id="gallery-slider-control">
-                                    <li class="gallery-slider__prev-btn">
+                                <ul className="gallery-slider__control" id="gallery-slider-control">
+                                    <li className="gallery-slider__prev-btn">
                                         <i>⮜</i>
                                     </li>
-                                    <li class="gallery-slider__next-btn">
+                                    <li className="gallery-slider__next-btn">
                                         <i>⮞</i>
                                     </li>
                                 </ul>

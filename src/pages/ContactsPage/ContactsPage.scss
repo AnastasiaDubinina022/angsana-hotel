@@ -51,10 +51,15 @@
     padding: 70px 30px;
 
     form {
-        flex: 0 1 330px;
+        flex: 0 1 650px;
         display: flex;
         justify-content: center;
     }
+}
+
+.form-wrapper {
+    display: flex;
+    justify-content: center;
 }
 
 .contact-form__container {
