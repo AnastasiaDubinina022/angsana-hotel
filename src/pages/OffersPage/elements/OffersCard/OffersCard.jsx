@@ -1,9 +1,10 @@
-import react from 'react';
+import { useDispatch } from 'react-redux';
+import { openModal } from '../../../../features/modalSlice';
 
 import './OffersCard.scss';
 
 const OffersCard = ({ offer }) => {
-
+    const dispatch = useDispatch();
     const { title, description, image, reverse } = offer;
     const innerStyle = reverse ? 'offers-card__inner-reverse' : 'offers-card__inner';
     const imageStyle = reverse ? 'content-image offers-card__image_reverse' : 'offers-card__image content-image';
@@ -16,9 +17,11 @@ const OffersCard = ({ offer }) => {
                     <div className="offers-card__body">
                         <h3>{title}</h3>
                         <p>{description}</p>
-                        <div className="offers-card__button yellow-button blocked">
-                            <a href="#">Read More</a>
-                        </div>
+                        <button 
+                            onClick={() => dispatch(openModal())}
+                            className="offers-card__button yellow-button blocked">
+                            Read More
+                        </button>
                     </div>
                     <div className={imageStyle}>
                         <img src={image} alt="offers-card-1" />

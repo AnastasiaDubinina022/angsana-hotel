@@ -1,4 +1,5 @@
-import react from 'react';
+import { useDispatch } from 'react-redux';
+import { openModal } from '../../../../features/modalSlice';
 
 import './HomeLifestyle.scss';
 
@@ -6,6 +7,7 @@ import FirstImage from './images/home-lifestyle-1.jpg';
 import SecondImage from './images/home-lifestyle-2.jpg';
 
 const HomeLifestyle = () => {
+    const dispatch = useDispatch();
 
     return (
         <section className="home-lifestyle">
@@ -46,7 +48,9 @@ const HomeLifestyle = () => {
                                 stay at any destination within The Sanctuary Club network.
                             </p>
                             <div className="home-lifestyle__button-wrapper">
-                                <a href="#" className="home-lifestyle__button blue-button blocked">Read more</a>
+                                <button 
+                                    onClick={() => dispatch(openModal())}
+                                    className="home-lifestyle__button blue-button blocked">Read more</button>
                             </div>
                         </div>
                     </div>

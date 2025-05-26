@@ -1,8 +1,10 @@
-import react from 'react';
+import { useDispatch } from 'react-redux';
+import { openModal } from './../../../../features/modalSlice';
 
 import './HomeAbout.scss';
 
 const HomeAbout = () => {
+    const dispatch = useDispatch();
 
     return (
         <section className="home-about">
@@ -27,7 +29,9 @@ const HomeAbout = () => {
                                     </p>
 
                                     <div className="home-about__info-button-wrapper">
-                                        <a href="#" className="home-about__info-button blue-button blocked">Read more</a>
+                                        <button
+                                            onClick={() => dispatch(openModal())}
+                                            className="home-about__info-button blue-button blocked">Read more</button>
                                     </div>
                                 </div>
                                 <div className="tabcontainer">

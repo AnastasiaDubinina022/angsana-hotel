@@ -1,8 +1,11 @@
-import react from 'react';
+import { useDispatch } from 'react-redux';
+import { openModal } from '../../../../features/modalSlice';
 
 import './RoomsCard.scss';
 
 const RoomsCard = ({ room }) => {
+    const dispatch = useDispatch();
+
     return (
         <div className="rooms-details__rooms-item">
             <div className="rooms-item__inner">
@@ -19,16 +22,20 @@ const RoomsCard = ({ room }) => {
                         </li>
                     ))}
                     <li>
-                        <a href="#" target="_blank" className="blocked">show more details...</a>
+                        <button
+                            onClick={() => dispatch(openModal())} 
+                            className="blocked">show more details...</button>
                     </li>
                 </ul>
                 <div className="rooms-item__row">
                     <div className="rooms-item__item">
                         <p>{room.price}</p>
                     </div>
-                    <div className="rooms-item__button blue-button blocked">
-                        <a href="#">Book now</a>
-                    </div>
+                    
+                        <button 
+                            onClick={() => dispatch(openModal())}
+                            className="rooms-item__button blue-button blocked">Book now</button>
+                    
                 </div>
             </div>
         </div>

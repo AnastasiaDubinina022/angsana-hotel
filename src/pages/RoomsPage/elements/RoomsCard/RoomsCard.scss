@@ -41,7 +41,7 @@
         padding-right: 7px;
     }
 
-    a {
+    button {
         color: var(--main-darkblue);
         font-weight: 700;
         transition: all 0.2s ease;
@@ -77,8 +77,8 @@
 .rooms-item__button {
     width: 130px;
     border-radius: 16px 4px 16px 4px;
-
-    a {
+    color: var(--text-white);
+    button {
         color: var(--text-white);
     }
 }

@@ -10,6 +10,7 @@ import RoomsPage from './pages/RoomsPage/RoomsPage';
 import FacilitiesPage from './pages/FacilitiesPage/FacilitiesPage';
 import ContactsPage from './pages/ContactsPage/ContactsPage';
 import OffersPage from './pages/OffersPage/OffersPage';
+import GlobalModal from './components/GlobalModal/GlobalModal';
 
 export default function App() {
   return (
@@ -23,6 +24,7 @@ export default function App() {
               <Route path="/offers" element={<OffersPage/>} />
               <Route path="/contacts" element={<ContactsPage/>} />
           </Routes>
+          <GlobalModal/>
           <Footer/>
         </div>
       </Router>

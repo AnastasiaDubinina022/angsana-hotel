@@ -1,10 +1,13 @@
-import react from "react";
+import {useState} from "react";
+import { useDispatch } from "react-redux";
+import { openModal } from "../../../../features/modalSlice";
 
 import './HomeWelcome.scss';
 
 import HomeBG from './images/home-welcome-hd.jpg';
 
 const HomeWelcome = () => {
+    const dispatch = useDispatch();
 
     return (
         <section className="home-welcome">
@@ -22,7 +25,9 @@ const HomeWelcome = () => {
                 </div>
 
                 <div className="home-welcome__button-wrapper">
-                    <a href="#" className="home-welcome__button blue-button blocked">Book now</a>
+                    <button 
+                        onClick={() => dispatch(openModal())}
+                        className="home-welcome__button blue-button blocked">Book now</button>
                 </div>
             </div>
         </section>
