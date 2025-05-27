@@ -18,7 +18,7 @@ const HomeWelcome = () => {
                 <div className="home-welcome__content">
                     <div className="container">
                         <p>Welcome to</p>
-                        <h1>Angsana Oceanview Laguna Phuket</h1>
+                        <h1>Angsana Oceanview <br/>Laguna Phuket</h1>
 
                         <h2>Book your stay and enjoy Luxury redefined at the most affordable rates.</h2>
                     </div>

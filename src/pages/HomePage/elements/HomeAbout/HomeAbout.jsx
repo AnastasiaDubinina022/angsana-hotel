@@ -3,6 +3,8 @@ import { openModal } from './../../../../features/modalSlice';
 
 import './HomeAbout.scss';
 
+import DefaultSlider from '../../../../components/DefaultSlider/DefaultSlider';
+
 const HomeAbout = () => {
     const dispatch = useDispatch();
 
@@ -30,29 +32,14 @@ const HomeAbout = () => {
 
                                     <div className="home-about__info-button-wrapper">
                                         <button
-                                            onClick={() => dispatch(openModal())}
-                                            className="home-about__info-button blue-button blocked">Read more</button>
+                                        onClick={() => dispatch(openModal())}
+                                        className="home-about__info-button blue-button blocked">Read more</button>
                                     </div>
                                 </div>
-                                <div className="tabcontainer">
-                                    <div className="tabcontent content-image">
-                                        <img src="./images/home-about-image-1.jpg" alt="Not found" />
-                                    </div>
-                                    <div className="tabcontent content-image">
-                                        <img src="./images/home-about-image-33.webp" alt="Not found" />
-                                    </div>
-                                    <div className="tabcontent content-image">
-                                        <img src="./images/home-about-image-5.webp" alt="Not found" />
-                                    </div>
-                                    <div className="tabcontent content-image">
-                                        <img src="./images/about-image.webp" alt="Not found" />
-                                    </div>
-                                    <div className="tabheader">
-                                        <div className="tabheader__item">Overwiew</div>
-                                        <div className="tabheader__item">Overwiew</div>
-                                        <div className="tabheader__item">Overwiew</div>
-                                        <div className="tabheader__item">Overwiew</div>
-                                    </div>
+                                <div className="slider-container">
+                                    <DefaultSlider 
+                                    images ={[ './../../../../../public/images/homeAboutSlider/home-about-image-5.webp', './../../../../../public/images/homeAboutSlider/home-about-image-3.webp', './../../../../../public/images/homeAboutSlider/home-about-image-1.jpg', './../../../../../public/images/homeAboutSlider/home-about-image-2.webp']}
+                                    className="custom-swiper"/>
                                 </div>
                             </div>
                         </div>
