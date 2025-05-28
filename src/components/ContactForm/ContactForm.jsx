@@ -40,49 +40,57 @@ const ContactForm = () => {
             onSubmit={handleSubmit}
             > 
             <Form className="form">
-                    <Field
-                        id="type"
-                        name="type"
-                        as='select'
+                    <div className='field-wrapper'>
+                        <Field
+                            id="type"
+                            name="type"
+                            as='select'
+                            className="contact-form__input" 
+                            tabIndex="1" 
+                        >
+                            <option value="" disabled >Type of enquiry *</option>
+                            <option value="general">General enquiries</option>
+                            <option value="guest-service">Guest service enquiries</option>
+                            <option value="bookings">Reservations and bookings</option>
+                            <option value="website">Website enquiries</option>
+                            <option value="spa">Spa enquiries</option>
+                            <option value="other">Other</option>
+                        </Field>
+                        <ErrorMessage className="error" name="type" component='div'/>
+                    </div>
+                <div className='field-wrapper'>
+                    <Field  
+                        id="name"
+                        name="name"
+                        type="text"
+                        className="contact-form__input"
+                        placeholder="Your name *" 
+                        tabIndex="2"
+                    />
+                    <ErrorMessage className="error" name="name" component='div'/> 
+                </div>
+                <div className='field-wrapper'>
+                    <Field  
+                        id="email"
+                        name="email"
+                        type="email"
                         className="contact-form__input" 
-                        tabIndex="1" 
-                    >
-                        <option value="" disabled >Type of enquiry *</option>
-                        <option value="general">General enquiries</option>
-                        <option value="guest-service">Guest service enquiries</option>
-                        <option value="bookings">Reservations and bookings</option>
-                        <option value="website">Website enquiries</option>
-                        <option value="spa">Spa enquiries</option>
-                        <option value="other">Other</option>
-                    </Field>
-                    <ErrorMessage className="error" name="type" component='div'/>
-                <Field  
-                    id="name"
-                    name="name"
-                    type="text"
-                    className="contact-form__input"
-                    placeholder="Your name *" 
-                    tabIndex="2"
-                />
-                <ErrorMessage className="error" name="name" component='div'/> 
-                <Field  
-                    id="email"
-                    name="email"
-                    type="email"
-                    className="contact-form__input" 
-                    placeholder="Your email *"
-                    tabIndex="3"
-                />
-                <ErrorMessage className="error" name="email" component='div'/> 
-                <Field  
-                    id="message"
-                    name="message"
-                    as='textarea'
-                    className="contact-form__textarea"
-                    placeholder="Your message *" 
-                    tabIndex="4"
-                />
-                <ErrorMessage className="error" name="message" component='div'/> 
+                        placeholder="Your email *"
+                        tabIndex="3"
+                    />
+                    <ErrorMessage className="error" name="email" component='div'/>
+                </div> 
+                <div className='field-wrapper'>
+                    <Field  
+                        id="message"
+                        name="message"
+                        as='textarea'
+                        className="contact-form__textarea"
+                        placeholder="Your message *" 
+                        tabIndex="4"
+                    />
+                    <ErrorMessage className="error_textarea" name="message" component='div'/> 
+                </div>
                 <div className="contact-form__button yellow-button blocked">
                     <button type="submit" tabIndex="5">Send message</button>
                 </div>

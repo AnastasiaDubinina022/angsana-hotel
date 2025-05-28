@@ -1,12 +1,25 @@
+import {useEffect, useState} from 'react';
 import { useDispatch } from 'react-redux';
-import { openModal } from './../../../../features/modalSlice';
+import axios from 'axios';
 
 import './HomeAbout.scss';
 
+import { openModal } from './../../../../features/modalSlice';
 import DefaultSlider from '../../../../components/DefaultSlider/DefaultSlider';
 
 const HomeAbout = () => {
     const dispatch = useDispatch();
+
+    const [images, setImages] = useState([]);
+
+    useEffect(() => {
+        axios.get('http://localhost:3001/homeAboutSlider')
+        .then((response) => {
+            const imageUrls = response.data.map(item => item.url);
+            setImages(imageUrls);
+        })
+        .catch((error) => console.error('Error fetching images:', error));
+    }, [])
 
     return (
         <section className="home-about">
@@ -37,9 +50,7 @@ const HomeAbout = () => {
                                     </div>
                                 </div>
                                 <div className="slider-container">
-                                    <DefaultSlider 
-                                    images ={[ './../../../../../public/images/homeAboutSlider/home-about-image-5.webp', './../../../../../public/images/homeAboutSlider/home-about-image-3.webp', './../../../../../public/images/homeAboutSlider/home-about-image-1.jpg', './../../../../../public/images/homeAboutSlider/home-about-image-2.webp']}
-                                    className="custom-swiper"/>
+                                    <DefaultSlider images={images}/>
                                 </div>
                             </div>
                         </div>

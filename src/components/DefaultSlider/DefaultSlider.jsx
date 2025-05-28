@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Mousewheel, Keyboard , Autoplay } from 'swiper/modules';
+import { Navigation, Pagination, Mousewheel, Keyboard , Autoplay, EffectCoverflow } from 'swiper/modules';
 
 import './DefaultSlider.scss';
 
@@ -10,10 +10,15 @@ import 'swiper/css/pagination';
 const DefaultSlider = ({
   images = [],
   className = '',
+  effect = '',
+  effectSettings = {},
   autoplay = true,
   delay = 5000,
-  loop = true,
-  slidesPerView = 1,
+  loop = false,
+  //   slidesPerView = 1,
+  breakpoints = null,
+  grabCursor=true,
+  centeredSlides=true,
   navigation = true,
   pagination = true,
   mousewheel = true,
@@ -23,16 +28,21 @@ const DefaultSlider = ({
     return (
     <>
         <Swiper
-            modules={[Navigation, Pagination, Mousewheel, Keyboard, Autoplay]}
+            effect={effect}
             autoplay={autoplay ? { delay, disableOnInteraction: false } : false}
             loop={loop}
-            slidesPerView={slidesPerView}
+            // slidesPerView={slidesPerView}
+            breakpoints={breakpoints}
+            grabCursor={grabCursor}
+            centeredSlides={centeredSlides}
             navigation={navigation}
             pagination={pagination}
             mousewheel={mousewheel}
             keyboard={keyboard}
             cssMode={cssMode}
             className={className}
+            {...(effect === 'coverflow' && { coverflowEffect: effectSettings })}
+            modules={[Navigation, Pagination, Mousewheel, Keyboard, Autoplay, EffectCoverflow]}
         >   
             {images.map((src, index) => (
                 <SwiperSlide key={index}>

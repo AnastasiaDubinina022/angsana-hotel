@@ -282,5 +282,26 @@
       "email": "asda@gmail.com",
       "message": "csaca ccsa c scs, sca"
     }
+  ],
+  "homeAboutSlider": [
+    { "id": 1, "url": "/images/homeAboutSlider/home-about-image-5.webp" },
+    { "id": 2, "url": "/images/homeAboutSlider/home-about-image-3.webp" },
+    { "id": 3, "url": "/images/homeAboutSlider/home-about-image-1.jpg" },
+    { "id": 4, "url": "/images/homeAboutSlider/home-about-image-2.webp" }
+  ],
+  "homeGallerySlider": [
+    { "id": 1, "url": "/images/homeGallerySlider/home-gallery-slider-1.jpg" },
+    { "id": 2, "url": "/images/homeGallerySlider/home-gallery-slider-2.webp" },
+    { "id": 3, "url": "/images/homeGallerySlider/home-gallery-slider-3.jpg" },
+    { "id": 4, "url": "/images/homeGallerySlider/home-gallery-slider-4.jpg" },
+    { "id": 5, "url": "/images/homeGallerySlider/home-gallery-slider-5.jpeg" },
+    { "id": 6, "url": "/images/homeGallerySlider/home-gallery-slider-6.webp" },
+    { "id": 7, "url": "/images/homeGallerySlider/home-gallery-slider-7.webp" },
+    { "id": 8, "url": "/images/homeGallerySlider/home-gallery-slider-8.jpg" },
+    { "id": 9, "url": "/images/homeGallerySlider/home-gallery-slider-9.jpg" },
+    { "id": 10, "url": "/images/homeGallerySlider/home-gallery-slider-10.jpg" },
+    { "id": 11, "url": "/images/homeGallerySlider/home-gallery-slider-11.jpg" },
+    { "id": 12, "url": "/images/homeGallerySlider/home-gallery-slider-12.webp" },
+    { "id": 13, "url": "/images/homeGallerySlider/home-gallery-slider-13.jpg" }
   ]
 }
