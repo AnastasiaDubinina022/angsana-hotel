@@ -1,47 +1,43 @@
-
 body {
-    font-family: Montserrat;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
-    color: var(--main-darkblue);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--main-darkblue);
 }
 
 .wrapper {
-    min-height: 100%;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    position: relative;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
 .container {
-    max-width: 1200px;
-    width: 100%;
-    padding: 0 25px;
-    margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 25px;
+  margin: 0 auto;
 }
 
 .main {
-    flex: 1;
+  flex: 1;
 }
 
 .offers-page {
-    padding: 150px 0px;
-    font-size: 30px;
-    
+  padding: 150px 0px;
+  font-size: 30px;
 }
 
-
-
 @media screen and (max-width: 960px) {
-    body {
-        font-size: 14px;
-    }
+  body {
+    font-size: 14px;
+  }
 
-    .offers {
-        h3 {
-            font-size: 20px;
-        }
+  .offers {
+    h3 {
+      font-size: 20px;
     }
+  }
 }

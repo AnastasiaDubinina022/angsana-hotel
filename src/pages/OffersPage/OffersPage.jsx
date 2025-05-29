@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import { useDispatch } from 'react-redux';
+import {useDispatch} from 'react-redux';
 
 import './OffersPage.scss';
 
@@ -7,22 +7,26 @@ import PageBanner from '../../components/PageBanner/PageBanner';
 import OffersList from './elements/OffersList/OffersList';
 import TermsList from './elements/TermsList/TermsList';
 
-import { fetchOffers } from '../../features/offersSlice';
+import {fetchOffers} from '../../features/offersSlice';
 
 const OffersPage = () => {
-    const dispatch = useDispatch();
+  const dispatch = useDispatch();
 
-    useEffect(() => {
-        dispatch(fetchOffers());
-    })
+  useEffect(() => {
+    dispatch(fetchOffers());
+  });
 
-    return (
-        <main className="main">
-            <PageBanner page="offers" title="Offers" subtitle="Explore our range of exclusive offers to inspire you as you plan your next trip." />
-            <OffersList/>
-            <TermsList/>
-        </main>
-    )
-}
+  return (
+    <main className="main">
+      <PageBanner
+        page="offers"
+        title="Offers"
+        subtitle="Explore our range of exclusive offers to inspire you as you plan your next trip."
+      />
+      <OffersList />
+      <TermsList />
+    </main>
+  );
+};
 
 export default OffersPage;

@@ -5,11 +5,7 @@
       "title": "Laguna room king",
       "image": "images/rooms/laguna-room-king/laguna-room-king-1.webp",
       "alt": "laguna-room-king-1",
-      "details": [
-        "1 bathroom",
-        "2 beds",
-        "2 people"
-      ],
+      "details": ["1 bathroom", "2 beds", "2 people"],
       "price": "6500 THB per night"
     },
     {
@@ -17,11 +13,7 @@
       "title": "Penthouse suite",
       "image": "/images/rooms/penthouse-suite/penthouse-suite-1.jpg",
       "alt": "penthouse-suite-1",
-      "details": [
-        "1 bathroom",
-        "2 beds",
-        "2 people"
-      ],
+      "details": ["1 bathroom", "2 beds", "2 people"],
       "price": "8000 THB per night"
     },
     {
@@ -29,11 +21,7 @@
       "title": "Two bedroom suite",
       "image": "/images/rooms/two-bedroom-suite/two-bedroom-suite-1.webp",
       "alt": "two-bedroom-suite-1",
-      "details": [
-        "1 bathroom",
-        "2 beds",
-        "2 people"
-      ],
+      "details": ["1 bathroom", "2 beds", "2 people"],
       "price": "10000 THB per night"
     },
     {
@@ -41,11 +29,7 @@
       "title": "Two bedroom villa",
       "image": "/images/rooms/two-bedroom-villa/two-bedroom-villa-1.webp",
       "alt": "two-bedroom-villa-1",
-      "details": [
-        "1 bathroom",
-        "2 beds",
-        "2 people"
-      ],
+      "details": ["1 bathroom", "2 beds", "2 people"],
       "price": "12000 THB per night"
     },
     {
@@ -53,11 +37,7 @@
       "title": "Two bedroom island duplex",
       "image": "/images/rooms/two-bedroom-island-duplex/two-bedroom-island-duplex-1.webp",
       "alt": "two-bedroom-island-duplex-1",
-      "details": [
-        "1 bathroom",
-        "2 beds",
-        "2 people"
-      ],
+      "details": ["1 bathroom", "2 beds", "2 people"],
       "price": "15000 THB per night"
     },
     {
@@ -65,11 +45,7 @@
       "title": "Two bedroom pool suite beach view",
       "image": "/images/rooms/two-bedroom-pool-suite-beach-view/two-bedroom-pool-suite-beach-view-1.webp",
       "alt": "two-bedroom-pool-suite-beach-view-1",
-      "details": [
-        "1 bathroom",
-        "2 beds",
-        "2 people"
-      ],
+      "details": ["1 bathroom", "2 beds", "2 people"],
       "price": "19000 THB per night"
     },
     {
@@ -77,11 +53,7 @@
       "title": "Three bedroom pool villa",
       "image": "/images/rooms/three-bedroom-pool-villa/three-bedroom-pool-villa-1.jpg",
       "alt": "three-bedroom-pool-villa-1",
-      "details": [
-        "1 bathroom",
-        "2 beds",
-        "2 people"
-      ],
+      "details": ["1 bathroom", "2 beds", "2 people"],
       "price": "22000 THB per night"
     },
     {
@@ -89,11 +61,7 @@
       "title": "Four bedroom pool villa",
       "image": "/images/rooms/four-bedroom-pool-villa/four-bedroom-pool-villa-1.jpg",
       "alt": "four-bedroom-pool-villa-1",
-      "details": [
-        "1 bathroom",
-        "2 beds",
-        "2 people"
-      ],
+      "details": ["1 bathroom", "2 beds", "2 people"],
       "price": "25000 THB per night"
     }
   ],
@@ -284,24 +252,24 @@
     }
   ],
   "homeAboutSlider": [
-    { "id": 1, "url": "/images/homeAboutSlider/home-about-image-5.webp" },
-    { "id": 2, "url": "/images/homeAboutSlider/home-about-image-3.webp" },
-    { "id": 3, "url": "/images/homeAboutSlider/home-about-image-1.jpg" },
-    { "id": 4, "url": "/images/homeAboutSlider/home-about-image-2.webp" }
+    {"id": 1, "url": "/images/homeAboutSlider/home-about-image-5.webp"},
+    {"id": 2, "url": "/images/homeAboutSlider/home-about-image-3.webp"},
+    {"id": 3, "url": "/images/homeAboutSlider/home-about-image-1.jpg"},
+    {"id": 4, "url": "/images/homeAboutSlider/home-about-image-2.webp"}
   ],
   "homeGallerySlider": [
-    { "id": 1, "url": "/images/homeGallerySlider/home-gallery-slider-1.jpg" },
-    { "id": 2, "url": "/images/homeGallerySlider/home-gallery-slider-2.webp" },
-    { "id": 3, "url": "/images/homeGallerySlider/home-gallery-slider-3.jpg" },
-    { "id": 4, "url": "/images/homeGallerySlider/home-gallery-slider-4.jpg" },
-    { "id": 5, "url": "/images/homeGallerySlider/home-gallery-slider-5.jpeg" },
-    { "id": 6, "url": "/images/homeGallerySlider/home-gallery-slider-6.webp" },
-    { "id": 7, "url": "/images/homeGallerySlider/home-gallery-slider-7.webp" },
-    { "id": 8, "url": "/images/homeGallerySlider/home-gallery-slider-8.jpg" },
-    { "id": 9, "url": "/images/homeGallerySlider/home-gallery-slider-9.jpg" },
-    { "id": 10, "url": "/images/homeGallerySlider/home-gallery-slider-10.jpg" },
-    { "id": 11, "url": "/images/homeGallerySlider/home-gallery-slider-11.jpg" },
-    { "id": 12, "url": "/images/homeGallerySlider/home-gallery-slider-12.webp" },
-    { "id": 13, "url": "/images/homeGallerySlider/home-gallery-slider-13.jpg" }
+    {"id": 1, "url": "/images/homeGallerySlider/home-gallery-slider-1.jpg"},
+    {"id": 2, "url": "/images/homeGallerySlider/home-gallery-slider-2.webp"},
+    {"id": 3, "url": "/images/homeGallerySlider/home-gallery-slider-3.jpg"},
+    {"id": 4, "url": "/images/homeGallerySlider/home-gallery-slider-4.jpg"},
+    {"id": 5, "url": "/images/homeGallerySlider/home-gallery-slider-5.jpeg"},
+    {"id": 6, "url": "/images/homeGallerySlider/home-gallery-slider-6.webp"},
+    {"id": 7, "url": "/images/homeGallerySlider/home-gallery-slider-7.webp"},
+    {"id": 8, "url": "/images/homeGallerySlider/home-gallery-slider-8.jpg"},
+    {"id": 9, "url": "/images/homeGallerySlider/home-gallery-slider-9.jpg"},
+    {"id": 10, "url": "/images/homeGallerySlider/home-gallery-slider-10.jpg"},
+    {"id": 11, "url": "/images/homeGallerySlider/home-gallery-slider-11.jpg"},
+    {"id": 12, "url": "/images/homeGallerySlider/home-gallery-slider-12.webp"},
+    {"id": 13, "url": "/images/homeGallerySlider/home-gallery-slider-13.jpg"}
   ]
 }

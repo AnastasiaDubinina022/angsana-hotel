@@ -1,32 +1,28 @@
 .main {
-    flex: 1;
+  flex: 1;
 }
 
 .main-wrapper {
-    display: flex;
-    flex-direction: column;
-
+  display: flex;
+  flex-direction: column;
 }
 
 .rooms-details {
-    padding: 70px 0;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 50px;
+  padding: 70px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 50px;
 }
 
-
-
-
 @media screen and (max-width: 767px) {
-    .rooms-details {
-        flex-direction: column;
-    }
+  .rooms-details {
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 960px) {
-    .rooms-details {
-        gap: 30px;
-    }
+  .rooms-details {
+    gap: 30px;
+  }
 }

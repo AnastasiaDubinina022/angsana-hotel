@@ -9,18 +9,17 @@ import HomeLifestyle from './elements/HomeLifestyle/HomeLifestyle';
 import HomeGallery from './elements/HomeGallery/HomeGallery';
 
 const HomePage = () => {
-
-    return (
-        <main className="main">
-            <div className='"main-wrapper"'>
-                <HomeWelcome />
-                <HomeAbout/>
-                <HomeEvents/>
-                <HomeLifestyle/>
-                <HomeGallery/>
-            </div>
-        </main>
-    )
-}
+  return (
+    <main className="main">
+      <div className='"main-wrapper"'>
+        <HomeWelcome />
+        <HomeAbout />
+        <HomeEvents />
+        <HomeLifestyle />
+        <HomeGallery />
+      </div>
+    </main>
+  );
+};
 
 export default HomePage;

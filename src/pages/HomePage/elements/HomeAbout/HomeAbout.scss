@@ -1,89 +1,84 @@
-
 .home-about {
-    display: flex;
-    padding: 70px 0 70px 0;
+  display: flex;
+  padding: 70px 0 70px 0;
 }
 
 .home-about__wrapper {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 }
 
 .home-about__info {
-    flex: 0 1 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 15px;
+  flex: 0 1 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 15px;
 }
 
 .home-about__info-button-wrapper {
-    display: flex;
+  display: flex;
 }
 
 .home-about__info-button {
-    width: 150px;
-    height: 35px;
+  width: 150px;
+  height: 35px;
 }
 
-
 .slider-container {
-    flex: 0 1 50%;
-    display: flex;  
-    overflow: hidden;
+  flex: 0 1 50%;
+  display: flex;
+  overflow: hidden;
 }
 
 .tabcontent {
-    flex: 1 1 auto;
-    margin-bottom: 15px;
+  flex: 1 1 auto;
+  margin-bottom: 15px;
 }
 
 .tabheader {
-    display: flex;
-    justify-content: space-between;
-    border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 4px;
 }
 
 .tabheader__item {
-    flex: 0 1 25%;
-    height: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-right: 1px solid var(--main-yellow);
-    border-bottom: 1px solid var(--main-yellow);
-    border-radius: 4px;
-    cursor: pointer;
+  flex: 0 1 25%;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid var(--main-yellow);
+  border-bottom: 1px solid var(--main-yellow);
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .tabheader__item_active {
-    background-color: var(--light-yellow);
-    border: 1px solid var(--main-yellow);
-    font-weight: 600;
+  background-color: var(--light-yellow);
+  border: 1px solid var(--main-yellow);
+  font-weight: 600;
 }
 
-.hide{
-    display: none;
+.hide {
+  display: none;
 }
 
 .show {
-    display: flex;
+  display: flex;
 }
 
 .fade {
-    animation: simple-appearance 0.4s linear forwards;
+  animation: simple-appearance 0.4s linear forwards;
 }
 
 .home-events {
-    display: flex;
-    flex: 1;
+  display: flex;
+  flex: 1;
 }
 
-
-
 @media screen and (max-width: 767px) {
-    .home-about__wrapper {
-        flex-direction: column;
-    }
-
+  .home-about__wrapper {
+    flex-direction: column;
+  }
 }

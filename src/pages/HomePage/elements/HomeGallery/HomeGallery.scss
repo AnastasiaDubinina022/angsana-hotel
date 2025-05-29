@@ -1,75 +1,74 @@
 .home-gallery {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: hidden;
-    // background-color: var(--light-yellow);
-    background: #14274A;
-    background: linear-gradient(180deg, rgba(20, 39, 74, 1) 25%, rgb(247, 233, 214) 100%);
-    height: 500px;
-}   
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  // background-color: var(--light-yellow);
+  background: #14274a;
+  background: linear-gradient(180deg, rgba(20, 39, 74, 1) 25%, rgb(247, 233, 214) 100%);
+  height: 500px;
+}
 
 .home-gallery__title {
-    background-color: var(--main-darkblue);
-    display: flex;
-    justify-content: center;
-    width: 100%;;
-    h3 {
-        text-align: center;
-        color: var(--text-white);
-        text-shadow: 0px 0px 8px var(--main-darkblue);
-        margin: 40px 0px 30px 0px;
-    }
+  background-color: var(--main-darkblue);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  h3 {
+    text-align: center;
+    color: var(--text-white);
+    text-shadow: 0px 0px 8px var(--main-darkblue);
+    margin: 40px 0px 30px 0px;
+  }
 }
 
 .home-gallery__slider {
-    max-width: 85%;
-    max-height: 80%;
-    padding: 0 25px;
-    margin: 0 auto;
-    position: relative;
+  max-width: 85%;
+  max-height: 80%;
+  padding: 0 25px;
+  margin: 0 auto;
+  position: relative;
 }
 
 @media screen and (max-width: 1400px) {
-    .home-gallery__slider {
+  .home-gallery__slider {
     max-width: 95%;
-    }
+  }
 }
 
 @media screen and (max-width: 1050px) {
-    .home-gallery {
-        height: 400px;
-    }
+  .home-gallery {
+    height: 400px;
+  }
 }
 
 @media screen and (max-width: 850px) {
-    .home-gallery {
-        height: 500px;
-    }
-    .home-gallery__slider {
+  .home-gallery {
+    height: 500px;
+  }
+  .home-gallery__slider {
     max-width: 90%;
     height: 70%;
-    }
+  }
 }
 
 @media screen and (max-width: 767px) {
-     .home-gallery {
-        height: 500px;
-    }
+  .home-gallery {
+    height: 500px;
+  }
 
- .home-gallery__slider {
+  .home-gallery__slider {
     max-width: 90%;
     height: 70%;
- }
+  }
 }
 
 @media screen and (max-width: 450px) {
-    .home-gallery {
-        max-height: 350px;
-    }
-    .home-gallery__slider {
+  .home-gallery {
+    max-height: 350px;
+  }
+  .home-gallery__slider {
     max-width: 94%;
     height: 60%;
- }
+  }
 }
-

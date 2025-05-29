@@ -11,28 +11,32 @@ import ContactsMap from './elements/ContactsMap/ContactsMap';
 import BGImage from './images/contacts-bg.jpg';
 
 const ContactsPage = () => {
-
-    return (
-        <main className="contacts">
-            <PageBanner page='contacts' title="Contact us" />
-            <ContactsAside />
-            <section className="contact-form">
-                    <div className="contact-form__bg-image">
-                        <img src={BGImage} alt="contacts background" />
-                    </div>
-                    <div className="contact-form__wrapper">
-                        <div className='form-wrapper'>
-                            <ContactForm />
-                        </div>
-                        <div className="contact-form__container">
-                            <ContactLinks/>
-                            <ContactsMap/>
-                        </div>
-                    </div>
-
-            </section>
-        </main>
-    )
-}
+  return (
+    <main className="contacts">
+      <PageBanner
+        page="contacts"
+        title="Contact us"
+      />
+      <ContactsAside />
+      <section className="contact-form">
+        <div className="contact-form__bg-image">
+          <img
+            src={BGImage}
+            alt="contacts background"
+          />
+        </div>
+        <div className="contact-form__wrapper">
+          <div className="form-wrapper">
+            <ContactForm />
+          </div>
+          <div className="contact-form__container">
+            <ContactLinks />
+            <ContactsMap />
+          </div>
+        </div>
+      </section>
+    </main>
+  );
+};
 
 export default ContactsPage;

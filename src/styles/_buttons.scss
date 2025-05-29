@@ -1,47 +1,47 @@
 .blue-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 35px;
-    background-color: var(--main-darkblue);
-    color: var(--text-white);
-    text-transform: uppercase;
-    font-weight: 600;
-    border: 1px solid var(--main-yellow);
-    border-radius: 4px;
-    box-shadow: 0px 0px 3px var(--light-yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  background-color: var(--main-darkblue);
+  color: var(--text-white);
+  text-transform: uppercase;
+  font-weight: 600;
+  border: 1px solid var(--main-yellow);
+  border-radius: 4px;
+  box-shadow: 0px 0px 3px var(--light-yellow);
 
-    transition: all 0.2s linear;
-    &:hover {
-        box-shadow: 0px 0px 6px var(--main-yellow);
-        transform: scale(1.02);
-    }
+  transition: all 0.2s linear;
+  &:hover {
+    box-shadow: 0px 0px 6px var(--main-yellow);
+    transform: scale(1.02);
+  }
 }
 
 .yellow-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 35px;
-    background-color: var(--main-yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  background-color: var(--main-yellow);
+  color: var(--main-darkblue);
+  text-transform: uppercase;
+  font-weight: 600;
+  border: 1px solid var(--main-darkblue);
+  border-radius: 4px;
+  box-shadow: 0px 0px 3px var(--light-yellow);
+
+  transition: all 0.2s linear;
+  &:hover {
+    box-shadow: 0px 0px 6px var(--main-yellow);
+    transform: scale(1.02);
+  }
+
+  a {
     color: var(--main-darkblue);
-    text-transform: uppercase;
-    font-weight: 600;
-    border: 1px solid var(--main-darkblue);
-    border-radius: 4px;
-    box-shadow: 0px 0px 3px var(--light-yellow);
+  }
 
-    transition: all 0.2s linear;
-    &:hover {
-        box-shadow: 0px 0px 6px var(--main-yellow);
-        transform: scale(1.02);
-    }
-
-    a {
-        color: var(--main-darkblue);
-    }
-
-    button {
-        color: var(--main-darkblue);
-    }
+  button {
+    color: var(--main-darkblue);
+  }
 }

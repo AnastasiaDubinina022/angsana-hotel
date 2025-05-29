@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
 
 import './styles/main.scss';
 
@@ -14,20 +14,34 @@ import GlobalModal from './components/GlobalModal/GlobalModal';
 
 export default function App() {
   return (
-      <Router>
-        <div className="wrapper">
-          <Header/>
-          <Routes>
-              <Route path="/" element={<HomePage/>} />
-              <Route path="/rooms" element={<RoomsPage/>} />
-              <Route path="/facilities" element={<FacilitiesPage/>} />
-              <Route path="/offers" element={<OffersPage/>} />
-              <Route path="/contacts" element={<ContactsPage/>} />
-          </Routes>
-          <GlobalModal/>
-          <Footer/>
-        </div>
-      </Router>
-    );  
+    <Router>
+      <div className="wrapper">
+        <Header />
+        <Routes>
+          <Route
+            path="/"
+            element={<HomePage />}
+          />
+          <Route
+            path="/rooms"
+            element={<RoomsPage />}
+          />
+          <Route
+            path="/facilities"
+            element={<FacilitiesPage />}
+          />
+          <Route
+            path="/offers"
+            element={<OffersPage />}
+          />
+          <Route
+            path="/contacts"
+            element={<ContactsPage />}
+          />
+        </Routes>
+        <GlobalModal />
+        <Footer />
+      </div>
+    </Router>
+  );
 }
-
