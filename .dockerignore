@@ -1,0 +1,33 @@
+# node modules и кэш
+node_modules
+dist
+.vite
+.vscode
+
+# логи и окружение
+*.log
+.env
+.env.*
+
+# тесты и временные файлы
+coverage
+*.test.*
+*.spec.*
+*.swp
+*.tmp
+
+# ОС и IDE-мусор
+.DS_Store
+Thumbs.db
+
+# git и редакторы
+.git
+.gitignore
+.prettierrc
+.eslintrc*
+*.iml
+
+# docker-мета
+Dockerfile
+docker-compose.yml
+*.dockerignore
