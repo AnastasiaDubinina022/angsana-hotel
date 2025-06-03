@@ -1,21 +1,20 @@
-# Этап 1: сборка фронта
-FROM node:18 AS builder
+# Используем официальный образ Node.js (лучше фиксировать версию)
+FROM node:18
 
+# Задаем рабочую директорию внутри контейнера
 WORKDIR /app
+
+# Копируем package.json и package-lock.json (если есть)
 COPY package*.json ./
+
+# Устанавливаем зависимости
 RUN npm install
+
+# Копируем остальные файлы проекта
 COPY . .
-RUN npm run build
 
-# Этап 2: nginx для продакшн-сервера
-FROM nginx:alpine
+# Открываем порт, на котором работает Vite по умолчанию
+EXPOSE 5173
 
-# Копируем сборку во внутреннюю директорию nginx
-COPY --from=builder /app/dist /usr/share/nginx/html
-
-# Кастомный конфиг (если нужно настроить spa routing)
-COPY nginx.conf /etc/nginx/conf.d/default.conf
-
-EXPOSE 80
-
-CMD ["nginx", "-g", "daemon off;"]
+# Запускаем Vite dev-сервер и разрешаем внешние подключения
+CMD ["npm", "run", "dev", "--", "--host"]
