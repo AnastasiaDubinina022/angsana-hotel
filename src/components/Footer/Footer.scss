@@ -260,13 +260,12 @@
 
 @media screen and (max-width: 600px) {
   .footer {
-    height: auto;;
+    height: auto;
     position: relative;
   }
 
   .footer__body {
     flex-direction: column;
-
   }
 
   .footer__adress {
@@ -292,7 +291,7 @@
     font-size: 12px;
 
     p {
-      margin-bottom: 7px;  
+      margin-bottom: 7px;
     }
 
     input {

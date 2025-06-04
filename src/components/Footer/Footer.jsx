@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import {useState} from 'react';
 import {Link} from 'react-router-dom';
 
 import './Footer.scss';
@@ -12,7 +12,7 @@ import SnapchatIcon from './icons/snapchat-icon.svg';
 const Footer = () => {
   const [email, setEmail] = useState('');
 
-  const handleEmailChange = (event) => {
+  const handleEmailChange = event => {
     setEmail(event.target.value);
   };
 
@@ -127,7 +127,10 @@ const Footer = () => {
             <div className="footer__subscribe">
               <p>Subscribe to our newsletter</p>
 
-              <form action="#" method="get" encType="multipart/form-data">
+              <form
+                action="#"
+                method="get"
+                encType="multipart/form-data">
                 <div className="footer__input-wrapper">
                   <div className="footer__input">
                     <input
