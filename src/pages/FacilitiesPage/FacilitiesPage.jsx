@@ -3,6 +3,7 @@ import {useDispatch} from 'react-redux';
 
 import './FacilitiesPage.scss';
 
+import PageWrapper from '../../components/PageWrapper/PageWrapper';
 import PageBanner from '../../components/PageBanner/PageBanner';
 import ServicesList from './elements/ServicesList/ServicesList';
 import FacilitiesList from './elements/FacilitiesList/FacilitiesList';
@@ -17,20 +18,22 @@ const FacilitiesPage = () => {
   }, []);
 
   return (
-    <main className="main">
-      <PageBanner
-        page="facilities"
-        title="Our facilities"
-      />
-      <ServicesList />
-      <section className="facilities">
-        <div className="container">
-          <div className="facilities__container">
-            <FacilitiesList />
+    <PageWrapper>
+      <main className="main">
+        <PageBanner
+          page="facilities"
+          title="Our facilities"
+        />
+        <ServicesList />
+        <section className="facilities">
+          <div className="container">
+            <div className="facilities__container">
+              <FacilitiesList />
+            </div>
           </div>
-        </div>
-      </section>
-    </main>
+        </section>
+      </main>
+    </PageWrapper>
   );
 };
 

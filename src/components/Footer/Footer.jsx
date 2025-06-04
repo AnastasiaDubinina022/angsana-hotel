@@ -1,4 +1,4 @@
-import React from 'react';
+import { useState } from 'react';
 import {Link} from 'react-router-dom';
 
 import './Footer.scss';
@@ -10,6 +10,12 @@ import InstagramIcon from './icons/instagram-icon.svg';
 import SnapchatIcon from './icons/snapchat-icon.svg';
 
 const Footer = () => {
+  const [email, setEmail] = useState('');
+
+  const handleEmailChange = (event) => {
+    setEmail(event.target.value);
+  };
+
   return (
     <footer className="footer">
       <div className="container footer-container">
@@ -121,16 +127,14 @@ const Footer = () => {
             <div className="footer__subscribe">
               <p>Subscribe to our newsletter</p>
 
-              <form
-                action="#"
-                method="get"
-                encType="multipart/form-data">
+              <form action="#" method="get" encType="multipart/form-data">
                 <div className="footer__input-wrapper">
                   <div className="footer__input">
                     <input
                       type="email"
                       name="usermail"
-                      value=""
+                      value={email}
+                      onChange={handleEmailChange}
                       placeholder="Enter your email"
                     />
                   </div>

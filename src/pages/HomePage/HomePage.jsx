@@ -1,7 +1,6 @@
-import React from 'react';
-
 import './HomePage.scss';
 
+import PageWrapper from '../../components/PageWrapper/PageWrapper';
 import HomeWelcome from './elements/HomeWelcome/HomeWelcome';
 import HomeAbout from './elements/HomeAbout/HomeAbout';
 import HomeEvents from './elements/HomeEvents/HomeEvents';
@@ -10,15 +9,17 @@ import HomeGallery from './elements/HomeGallery/HomeGallery';
 
 const HomePage = () => {
   return (
-    <main className="main">
-      <div className='"main-wrapper"'>
-        <HomeWelcome />
-        <HomeAbout />
-        <HomeEvents />
-        <HomeLifestyle />
-        <HomeGallery />
-      </div>
-    </main>
+    <PageWrapper>
+      <main className="main">
+        <div className='"main-wrapper"'>
+          <HomeWelcome />
+          <HomeAbout />
+          <HomeEvents />
+          <HomeLifestyle />
+          <HomeGallery />
+        </div>
+      </main>
+    </PageWrapper>
   );
 };
 

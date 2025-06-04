@@ -198,6 +198,7 @@
   .footer__subscribe {
     display: flex;
     padding: 20px 0px 0px 0px;
+    gap: 0;
 
     p,
     form {
@@ -259,12 +260,13 @@
 
 @media screen and (max-width: 600px) {
   .footer {
-    height: 370px;
+    height: auto;;
     position: relative;
   }
 
-  .footer__info {
-    justify-content: flex-start;
+  .footer__body {
+    flex-direction: column;
+
   }
 
   .footer__adress {
@@ -272,7 +274,9 @@
   }
 
   .footer__links {
-    flex-direction: column;
+    flex-direction: row;
+    margin: 20px 0;
+    font-size: 12px;
 
     a {
       display: inline-block;
@@ -285,18 +289,20 @@
   }
 
   .footer__subscribe {
-    position: absolute;
-    bottom: 25px;
-    left: 15px;
+    font-size: 12px;
 
     p {
-      margin-bottom: 7px;
+      margin-bottom: 7px;  
+    }
+
+    input {
+      font-size: 12px;
     }
   }
 
   .footer__button {
     button {
-      width: 30px;
+      width: 50px;
     }
   }
 }
