@@ -10,7 +10,7 @@ const HomeGallery = () => {
 
   useEffect(() => {
     axios
-      .get('http://localhost:3001/homeGallerySlider')
+      .get(`${import.meta.env.VITE_API_URL}/homeGallerySlider`)
       .then(response => {
         const imageUrls = response.data.map(item => item.url);
         setImages(imageUrls);

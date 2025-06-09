@@ -7,7 +7,7 @@ const initialState = {
 };
 
 export const fetchFacilities = createAsyncThunk('facilities/fetchFacilities', async () => {
-  const response = await axios.get('http://localhost:3001/facilities');
+  const response = await axios.get(`${import.meta.env.VITE_API_URL}/facilities`);
   return response.data;
 });
 

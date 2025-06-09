@@ -14,7 +14,7 @@ const HomeAbout = () => {
 
   useEffect(() => {
     axios
-      .get('http://localhost:3001/homeAboutSlider')
+      .get(`${import.meta.env.VITE_API_URL}/homeAboutSlider`)
       .then(response => {
         const imageUrls = response.data.map(item => item.url);
         setImages(imageUrls);

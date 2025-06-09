@@ -13,6 +13,7 @@ const Footer = () => {
   const [email, setEmail] = useState('');
 
   const handleEmailChange = event => {
+    event.preventDefault();
     setEmail(event.target.value);
   };
 
