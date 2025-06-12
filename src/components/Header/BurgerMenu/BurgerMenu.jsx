@@ -21,6 +21,8 @@ const BurgerMenu = () => {
   ];
 
   const handleClickOutside = event => {
+    if (event.target.closest('.burger-button')) return;
+
     if (menuRef.current && !menuRef.current.contains(event.target)) {
       dispatch(closeMenu());
     }
@@ -39,9 +41,9 @@ const BurgerMenu = () => {
 
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
-      document.addEventListener('keydown', handleKeyDown);
+      document.removeEventListener('keydown', handleKeyDown);
     };
-  }, []);
+  }, [isOpen]);
 
   return (
     <AnimatePresence>

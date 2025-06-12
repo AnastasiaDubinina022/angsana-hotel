@@ -1,17 +1,21 @@
 .burger-menu {
   display: none;
-  position: fixed;
-  top: 101px;
+  position: absolute;
+  top: 0;
   right: 0;
-  width: 250px;
-  height: auto;
+  width: 50vw;
+  height: 100vh;
 
   @media screen and (max-width: 768px) {
     display: flex;
   }
 
+  @media screen and (max-width: 550px) {
+    width: 60vw;
+  }
+
   @media screen and (max-width: 400px) {
-    width: 200px;
+    width: 70vw;
     font-size: 14px;
   }
 }
@@ -24,10 +28,8 @@
   background-color: var(--main-darkblue);
   font-size: 18px;
   font-weight: 500;
-  border-radius: 0 0 0 8px;
   border-left: 1px solid var(--main-yellow);
-  border-bottom: 1px solid var(--main-yellow);
-  padding: 20px 0 60px 20px;
+  padding: 110px 0 60px 20px;
 }
 
 .burger-link {
