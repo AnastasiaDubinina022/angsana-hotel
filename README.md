@@ -3,7 +3,8 @@
 ## Demonstration
 
 🌐 Project deployed on server : http://37.1.215.81:3002
-deploy infrastructure: - VPS (Ubuntu 20.04)  
+deploy infrastructure: 
+ - VPS (Ubuntu 20.04)  
  - Nginx  
  - Docker
 
