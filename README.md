@@ -1,12 +1,11 @@
-# React application with support for desktop and mobile devices. 
+# React application with support for desktop and mobile devices.
 
 ## Demonstration
 
-🌐 Project deployed on server : http://37.1.215.81:3002 
-     deploy infrastructure:
-     - VPS (Ubuntu 20.04)  
-     - Nginx  
-     - Docker
+🌐 Project deployed on server : http://37.1.215.81:3002
+deploy infrastructure: - VPS (Ubuntu 20.04)  
+ - Nginx  
+ - Docker
 
 <p align="center">
   <img src="src/assets/images/demo-screenshots/demo-screenshot-1.png" width="300" />
@@ -21,18 +20,18 @@
 
 Initial implementation: HTML, SCSS, Native JS (then the project was transferred to react)
 
-Modern version: 
+Modern version:
 
--  React 18.3.1
--  Vite 5.2.0
--  Redux Toolkit
--  React Router 6.23.1 
--  Axios
--  Formik + Yup 
--  Framer-motion 
--  Swiper.js 
--  Leaflet 
--  Json-server 
+- React 18.3.1
+- Vite 5.2.0
+- Redux Toolkit
+- React Router 6.23.1
+- Axios
+- Formik + Yup
+- Framer-motion
+- Swiper.js
+- Leaflet
+- Json-server
 
 ## Setup
 
