@@ -2,7 +2,7 @@
 
 ## Demonstration
 
-🌐 Project deployed on server : http://37.1.215.81:3002
+🌐 Project deployed on server : http://37.1.215.81:5173
 deploy infrastructure: 
  - VPS (Ubuntu 20.04)    
  - Docker
