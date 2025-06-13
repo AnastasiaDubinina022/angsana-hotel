@@ -1,5 +1,5 @@
 # ---------- БИЛДЕР: Собираем фронтенд ----------
-FROM node:18 as builder
+FROM node:18 AS builder
 
 # Устанавливаем рабочую директорию
 WORKDIR /app
@@ -17,6 +17,9 @@ ENV VITE_API_URL=$VITE_API_URL
 
 # Собираем production-сборку Vite
 RUN npm run build
+
+# Копируем PUBLIC файлы внутрь dist
+RUN cp -r public/* dist/
 
 
 # ---------- ПРОДАКШН: Запускаем фронт + json-server ----------

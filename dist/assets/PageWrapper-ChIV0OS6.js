@@ -1,0 +1,1 @@
+import{j as t,m as a}from"./index-C7UJk6zi.js";const n={initial:{opacity:.2,x:-100},animate:{opacity:1,x:0,transition:{duration:.3}},exit:{opacity:.2,x:100,transition:{duration:.2}}};function r({children:i}){return t.jsx(a.div,{variants:n,initial:"initial",animate:"animate",exit:"exit",children:i})}export{r as P};
